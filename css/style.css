@@ -1,0 +1,29 @@
+body{
+  font-family: tahoma;
+  line-height: 1.5;
+}
+header nav{
+  background-color: #EEEEEE;
+  border: #afafaf 1px solid;
+}
+p{
+  color: #434b4d;
+}
+.red p{
+  color: red;
+}
+.btn{
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none;
+  color: darkmagenta;
+}
+  .btn-danger{
+    color: red;
+  }
+  .btn-alert{
+    color: yellow;
+  }
+  .btn-border{
+    border: orange 1px solid;
+  }
