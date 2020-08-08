@@ -9,9 +9,24 @@ header nav{
 p{
   color: #434b4d;
 }
-.red p{
-  color: red;
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+  ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: ;
+    font-weight: 500;
+  }
+  ul li a:hover{
+    border-bottom: #266F8C 2px;
+    color: #F2F2F2;
+  }
+/* .red p{
+  color: red;
+} */
 .btn{
   text-transform: uppercase;
   font-weight: 900;
@@ -27,3 +42,81 @@ p{
   .btn-border{
     border: orange 1px solid;
   }
+  .btn:hover{
+    background-color: black;
+    color: white;
+  }
+ 
+  .btn-habitaciones{
+    padding: 7px 20px;
+    margin: 40px 50px;
+    border-radius: 6px;
+    text-transform: none;
+    font-family: sans-serif;
+    background: #127373;
+    color: #F2F2F2;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .btn-promociones{
+    padding: 7px 20px;
+    margin: 40px 50px;
+    border-radius: 6px;
+    text-transform: none;
+    font-family: sans-serif;
+    background: #0A7368;
+    color: #F2F2F2;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .btn-rest-piscina{
+    padding: 7px 20px;
+    margin: 0px;
+    border-radius: 6px;
+    text-transform: none;
+    font-family: sans-serif;
+    background: #D0F2EF;
+    color: #255959;
+    font-weight: 500;
+    font-size: 14px;
+  }
+.border{
+  border: black 1px solid;
+}
+ .border-form{
+   background: linear-gradient(to bottom,#572364, #af72be);
+   padding: 30px;
+   color: #F2F2F2;
+ }
+.caja-bienvenida p{
+  width: 800px;
+  font-family:arial, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: none;
+  text-align: left;
+  line-height: 1.5;
+  text-align: left;
+}
+  .caja-bienvenida h2{
+    font-size: 18px;
+    color: #255959;
+    font-weight: 600;
+  }
+.caja-habitaciones{
+  margin: 10px;
+  padding: 5px;
+}
+  .caja-habitaciones p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15 px;
+  }
+  .caja-habitaciones h3{
+    font-size: 17px;
+    color: #255959;
+    font-weight: 600;
+  }
+.titulares{
+  font-size: 18px;
+  color: #4b3a22;
+}

@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Argentino Hotel | Mendoza</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
@@ -48,7 +50,7 @@
     </div>
 
     <!-- FORMULARIO PRINCIPAL -->
-    <div class="container">
+    <div class="container border border-form">
       <form action="procesar-info-php" method="post">
         <!-- <label for="">Nombre y Apellido</label> -->
         <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
@@ -79,7 +81,7 @@
             <img src="imgs/Bienvenidos.jpg" alt="">
           </div>
 
-          <div class="col-8">
+          <div class="col-8 caja-bienvenida">
             <h2>Bienvenidos a Nuestro Hotel</h2>
             <p>Ubicados frente a la Plaza Independecia, en pleno centro de la ciudad, un hotel único por sus servicios y estilo.</p>
             <p>46 habitaciones con todas las comodidades, piscina, sala de reuniones, WiFi sin cargo en las habitaciones y áreas comunes, cajas de seguridad, y un cálido Restó, con una carta de vinos cuidadosamente seleccionada.</p>
@@ -95,14 +97,14 @@
 
         <div class="row">
           <div class="col-12">
-            <h2>Habitaciones</h2>
+            <h2 class="titulares">Habitaciones</h2>
           </div>
         </div>   <!-- /.row -->
 
         <div class="row">
-          <div class="col-6 red">
-            <article>
-              <img src="imgs/3.jpg" alt="">
+          <div class="col-6">
+            <article class="caja-habitaciones">
+              <img src="imgs/3.jpg" width="400" alt="">
               <h3>Standard</h3>
               <div>
                 <img src="imgs/iconos/icon-cajaf.png" alt="">
@@ -110,13 +112,13 @@
                 <img src="imgs/iconos/icon-aire.png" alt="">
               </div>
               <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable...</p>
-              <a href="habitacion-standard" class="btn">Ver [+]</a>
+              <a href="habitacion-standard" class="btn btn-habitaciones">Ver Más</a>
             </article>
           </div>
 
           <div class="col-6">
-            <article>
-              <img src="imgs/1.jpg" alt="">
+            <article class="caja-habitaciones">
+              <img src="imgs/1.jpg" width="400" alt="">
               <h3>Ejecutiva</h3>
               <div>
                 <img src="imgs/iconos/icon-cajaf.png" alt="">
@@ -124,7 +126,7 @@
                 <img src="imgs/iconos/icon-aire.png" alt="">
               </div>
               <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable...</p>
-              <a href="habitacion-ejecutiva" class="btn">Ver [+]</a>
+              <a href="habitacion-ejecutiva" class="btn btn-habitaciones">Ver más</a>
             </article>
           </div>
         </div>  <!-- /.row -->
@@ -133,34 +135,34 @@
 
     <!-- SECTION Promociones -->
     <section id="promociones">
-      <h2>Promociones</h2>
+      <h2 class="titulares">Promociones</h2>
       <div class="container">
 
         <div class="row">
           <div class="col-2">
             <article>
-              <img src="https://via.placeholder.com/300x150" alt="">
+              <img src="imgs/argentino-hotel12.jpg" width="300" alt="">
               <h3>Temporada Baja</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci assumenda facere, soluta vitae nostrum dolorem?</p>
-              <a href="#/">Ver más</a>
+              <a href="#/" class="btn btn-promociones">Ver más</a>
             </article>
           </div>
 
           <div class="col-2">
             <article>
-              <img src="https://via.placeholder.com/300x150" alt="">
+              <img src="imgs/argentino-hotel12.jpg" width="300" alt="">
               <h3>Temporada Baja</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci assumenda facere, soluta vitae nostrum dolorem?</p>
-              <a href="#/">Ver más</a>
+              <a href="#/" class="btn btn-promociones">Ver más</a>
             </article>
           </div>
 
           <div class="col-2">
             <article>
-              <img src="https://via.placeholder.com/300x150" alt="">
+              <img src="imgs/argentino-hotel12.jpg" width="300" src="https://via.placeholder.com/300x150" alt="">
               <h3>Temporada Baja</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci assumenda facere, soluta vitae nostrum dolorem?</p>
-              <a href="#/">Ver más</a>
+              <a href="#/" class="btn btn-promociones">Ver más</a>
             </article>
           </div>
         </div>  <!-- /.row -->
@@ -179,7 +181,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-           <h2>Servicios</h2>
+           <h2 class="titulares">Servicios</h2>
           </div>
         </div>  <!-- /.row -->
       
@@ -335,7 +337,7 @@
             <article>
               <h3>Los Girasoles</h3>
               <p>Nuestro restaurante Los Girasoles Restó ofrece un ambiente distendido y ameno para disfrutar durante un viaje de negocios, en familia o con amigos una cocina simple que combina sabores y aromas de Mendoza.</p>
-              <a href="restaurante_info">Ver [+]</a>
+              <a href="restaurante_info" class="btn btn-rest-piscina">Ver más</a>
             </article>
           </div>
         </div>  <!-- /.row -->
@@ -357,7 +359,7 @@
             <article>
               <h3>Piscina</h3>
               <p>Argentino Hotel cuenta con un sector de piscina donde podrá relajarse y disfrutar del sol mendocino. Habilitada de Noviembre a Febrero.</p>
-              <a href="piscina_imgs">Ver [+]</a>
+              <a href="piscina_imgs" class="btn btn-rest-piscina">Ver más</a>
             </article>
           </div>
         </div>  <!-- /.row -->
