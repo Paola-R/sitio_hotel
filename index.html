@@ -41,16 +41,16 @@
     </nav>
 
     <!-- SLIDER-->
-    <div class="bxslider">
+    <div class="slider">
       <div>
-        <img src="https://via.placeholder.com/1600x400?text=SLIDER" title="Funky roots">
+        <img src="https://via.placeholder.com/1000x400?text=SLIDER" title="Funky roots">
       </div>
       <!-- <div><img src="/assets/images/coffee2.jpg"></div>
       <div><img src="/assets/images/coffee3.jpg"></div> -->
     </div>
 
     <!-- FORMULARIO PRINCIPAL -->
-    <div>
+    <div class="container">
       <form action="procesar-info-php" method="post">
         <!-- <label for="">Nombre y Apellido</label> -->
         <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
@@ -89,7 +89,7 @@
           </div>
         </div>  <!-- /.row -->
       </div>  <!-- /.container -->
-    </section>
+    </section> 
 
     <!-- SECTION Habitaciones -->
     <section id="habitaciones">
@@ -112,7 +112,7 @@
                 <img src="img/iconos/icon-aire.png" alt="">
               </div>
               <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable...</p>
-              <a href="habitacion-standard" class="btn">Ver Más</a>
+              <a href="habitacion-standard">Ver Más</a>
             </article>
           </div>
 
@@ -126,7 +126,7 @@
                 <img src="img/iconos/icon-aire.png" alt="">
               </div>
               <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable...</p>
-              <a href="habitacion-ejecutiva" class="btn">Ver más</a>
+              <a href="habitacion-ejecutiva">Ver más</a>
             </article>
           </div>
         </div>  <!-- /.row -->
@@ -135,34 +135,41 @@
 
     <!-- SECTION Promociones -->
     <section id="promociones">
-      <h2>Promociones</h2>
       <div class="container">
 
         <div class="row">
-          <div class="col-2">
+          <div class="col-12">
+           <h2>Promociones</h2>
+          </div>
+        </div>  <!-- /.row -->
+
+       <!-- <div class="container"> -->
+
+        <div class="row">
+          <div class="col-12">
             <article>
               <img src="img/argentino-hotel12.jpg" width="300" alt="">
               <h3>Temporada Baja</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci assumenda facere, soluta vitae nostrum dolorem?</p>
-              <a href="#/" class="btn">Ver más</a>
+              <a href="#/">Ver más</a>
             </article>
           </div>
 
-          <div class="col-2">
+          <div class="col-12">
             <article>
               <img src="img/argentino-hotel12.jpg" width="300" alt="">
               <h3>Temporada Baja</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci assumenda facere, soluta vitae nostrum dolorem?</p>
-              <a href="#/" class="btn">Ver más</a>
+              <a href="#/">Ver más</a>
             </article>
           </div>
 
-          <div class="col-2">
+          <div class="col-12">
             <article>
               <img src="img/argentino-hotel12.jpg" width="300" src="https://via.placeholder.com/300x150" alt="">
               <h3>Temporada Baja</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci assumenda facere, soluta vitae nostrum dolorem?</p>
-              <a href="#/" class="btn">Ver más</a>
+              <a href="#/">Ver más</a>
             </article>
           </div>
         </div>  <!-- /.row -->
@@ -171,7 +178,7 @@
 
     <!-- ASIDE Opinión Clientes -->
     <aside id="opinion-clientes">
-      <img src="https://via.placeholder.com/1400x400?text=Opinión%20Clientes" alt="">
+      <img src="https://via.placeholder.com/1000x400?text=Opinión%20Clientes" alt="">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam libero veniam. Aut, tenetur minus.</p>
       <p>Nombre del Cliente</p>
     </aside>
@@ -186,133 +193,97 @@
         </div>  <!-- /.row -->
       
         <div class="row">
-          <div class="col-3">
+          <div class="col-1">
             <article>
               <img src="img/iconos/icon-aire.png" alt="">
               <h5>Aire Acondicionado</h5>
             </article>
-          </div>
 
-          <div class="col-3">
             <article>
               <img src="img/iconos/icon-cajaf.png" alt="">
-              <h5>CajaFuerte</h5>
+              <h5>Caja Fuerte</h5>
             </article>
-          </div>
 
-          <div class="col-3">
             <article>
               <img src="img/iconos/icon-ducha.png" alt="">
               <h5>Ducha</h5>
             </article>
           </div>
 
-          <div class="col-3">
+          <div class="col-1">
             <article>
               <img src="img/iconos/icon-fono.png" alt="">
               <h5>Teléfono</h5>
             </article>
-          </div>
 
-          <div class="col-3">
             <article>
               <img src="img/iconos/icon-frigo.png" alt="">
               <h5>Minibar</h5>
             </article>
-          </div>
 
-          <div class="col-3">
             <article>
               <img src="img/iconos/icon-toalla.png" alt="">
               <h5>Toallas</h5>
             </article>
           </div>
 
-          <div class="col-3">
+          <div class="col-1">
             <article>
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Internet de alta velocidad gratuito (WiFi)</h5>
             </article>
-          </div>
 
-          <div class="col-3">
             <article>
               <img src="img/iconos/icon-st.png" alt="">
               <h5>LCD</h5>
             </article>
-          </div>
 
-          <div class="col-3">
             <article>
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Estacionamiento gratis</h5>
             </article>
           </div>
 
-          <div class="col-3">
+          <div class="col-1">
             <article>
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Almacenamiento de equipaje</h5>
             </article>
-          </div>
 
-          <div class="col-3">
             <article>
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Recepción disponible las 24 horas</h5>
             </article>
-          </div>
-
-          <div class="col-3">
+ 
             <article>
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Desayuno gratis</h5>
             </article>
           </div>
 
-          <div class="col-3">
+          <div class="col-1">
             <article>
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Conserje</h5>
             </article>
-          </div>
 
-          <div class="col-3">
-            <article>
-              <img src="img/iconos/icon-st.png" alt="">
-              <h5>Limpieza en seco</h5>
-            </article>
-          </div>
-
-          <div class="col-3">
-            <article>
-              <img src="img/iconos/icon-st.png" alt="">
-              <h5>Piscina</h5>
-            </article>
-          </div>
-
-          <div class="col-3">
             <article>
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Servicio de planchado</h5>
             </article>
-          </div>
 
-          <div class="col-3">
             <article>
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Servicio de lavandería</h5>
             </article>
           </div>
 
-          <div class="col-3">
+          <div class="col-1">
             <article>
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Restaurante</h5>
             </article>
-          </div>
 
-          <div class="col-3">
             <article>
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Bar/Salón</h5>
@@ -323,21 +294,27 @@
     </section>
 
     <!-- SECTION Restaurante -->
+
     <section id="restaurante">
-      <h3>Restaurante</h3>
       <div class="container">
-         <div class="row">
+        <div class="row">
+          <div class="col-12">
+            <h3>Restaurante</h3>
+          </div>
+        </div>
+      
+        <div class="row">
           <div class="col-12">
             <img src="img/gastronomia/f1.jpg" width="500" alt="">
           </div>
         </div>   <!-- /.row -->
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-12">
             <article>
               <h3>Los Girasoles</h3>
               <p>Nuestro restaurante Los Girasoles Restó ofrece un ambiente distendido y ameno para disfrutar durante un viaje de negocios, en familia o con amigos una cocina simple que combina sabores y aromas de Mendoza.</p>
-              <a href="restaurante_info" class="btn">Ver más</a>
+              <a href="restaurante_info">Ver más</a>
             </article>
           </div>
         </div>  <!-- /.row -->
@@ -346,20 +323,26 @@
 
     <!-- SECTION Piscina -->
     <section id="piscina">
-      <h3>Piscina</h3>
       <div class="container">
-         <div class="row">
+        <div class="row">
+          <div class="col-12">
+            <h3>Piscina</h3>
+          </div>
+        </div> <!--/.row -->
+      
+
+        <div class="row">
           <div class="col-12">
             <img src="img/2.jpg" alt="">
           </div>
         </div>   <!-- /.row -->
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-12">
             <article>
               <h3>Piscina</h3>
               <p>Argentino Hotel cuenta con un sector de piscina donde podrá relajarse y disfrutar del sol mendocino. Habilitada de Noviembre a Febrero.</p>
-              <a href="piscina_img" class="btn">Ver más</a>
+              <a href="piscina_img">Ver más</a>
             </article>
           </div>
         </div>  <!-- /.row -->
@@ -372,47 +355,47 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-4">
+        <div class="col-12">
+
           <!-- Mapa -->
           <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13401.496066903443!2d-68.85010468734133!3d-32.888278162663596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbc763b4206e9d2a0!2sHotel%20Argentino!5e0!3m2!1ses-419!2sar!4v1595880042886!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13401.496066903443!2d-68.85010468734133!3d-32.888278162663596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbc763b4206e9d2a0!2sHotel%20Argentino!5e0!3m2!1ses-419!2sar!4v1595880042886!5m2!1ses-419!2sar" width="400" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </div>
+      </div>  <!--/.container -->
 
-        <div class="col-8">
-          <aside id="contacto">
-            <div class="container">
-              <div class="row">
+      <aside id="contacto">
+        <div class="container">
+          <div class="row">
 
-                <!-- Caja Left -->
-                <div class="col-3">
-                  <img src="img/logo_02.jpg" width="150" alt="">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In odio architecto doloribus quos beatae ex?</p>
-                </div>
+            <!-- Caja Left -->
+            <div class="col-3">
+              <img src="img/logo_02.jpg" width="150" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In odio architecto doloribus quos beatae ex?</p>
+            </div>
 
-                <div class="col-5">
-                  <!-- Formulario =============================== -->
-                  <form action="procesar-info.php" method="post">
-                    <input type="text" placeholder="Nombre y Apellido">
-                    <input type="email" placeholder="Email" required>
-                    <textarea name="Comentario" id="Comentario" cols="30" rows="10">Ingrese Comentario...</textarea>
-                    <input type="submit" value="Enviar mensaje">
-                  </form>
-                </div>
+            <div class="col-4">
+              <!-- Formulario =============================== -->
+              <form action="procesar-info.php" method="post">
+                <input type="text" placeholder="Nombre y Apellido">
+                <input type="email" placeholder="Email" required>
+                <textarea name="Comentario" id="Comentario" cols="30" rows="10">Ingrese Comentario...</textarea>
+                <input type="submit" value="Enviar mensaje">
+              </form>
+            </div>
 
-                <!-- Caja Bottom -->
-                <div class="col-8">
-                  <div>
-                    <a href="tel:5492616109349">5492616109349</a>
-                    <a href="mailto:info@argentino-hotel.com">info@argentino-hotel.com</a>
-                    <a href="https://api.whatsapp.com/send?phone=+5492616109349&text=holaa">WhatsApp</a>
-                  </div>
-                </div>
-              </div>  <!-- /.row -->
-            </div>  <!-- /.container -->
-          </aside>
-        </div>
-      </div>  <!-- /.row -->
+            <!-- Caja Bottom -->
+            <div class="col-5">
+              <div>
+                <a href="tel:5492616109349">5492616109349</a>
+                <a href="mailto:info@argentino-hotel.com">info@argentino-hotel.com</a>
+                <a href="https://api.whatsapp.com/send?phone=+5492616109349&text=holaa">WhatsApp</a>
+              </div>
+            </div>
+          </div>  <!-- /.row -->
+        </div>  <!-- /.container -->
+      </aside>
+
     </div>  <!-- /.container -->
 
     <!--SUBFOOTER -->
@@ -430,105 +413,120 @@
   <!-- VENTANAS MODALES
   ===================== -->
 
-  <!-- Habiación Standard -->
-  <div id="habitacion-standard">
-    <div>
-      <h3>Standard</h3>
-      <img src="img/habitaciones/1.jpg" width="200" alt="">
-      <img src="img/habitaciones/249-standard-room--v11426823.jpg" width="200" alt="">
-      <img src="img/habitaciones/249-standard-room--v11426807.jpg" width="200" alt="">
-      <p>Desde $3689 ARS Final por noche</p>
-      <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable, Room Service, Wi Fi sin cargo adicional, climatización individual, camas sommier, amenities, servicios DDI y DDN.</p>
-      <h4>Servicios</h4>
-      <ul>
-        <li>Aire Acondicionado</li>
-        <li>Caja Fuerte</li>
-        <li>Minibar</li>
-        <li>Ducha</li>
-        <li>Toallas</li>
-        <li>Teléfono</li>
-        <li>LCD</li>
-        <li>Internet sin cargo adicional (WiFi)</li>
-        <li>Prohibido fumar en las habitaciones </li>
-      </ul>
-      <h4>Entrada</h4>
-        <p>03:00 PM </p>
-      <h4>Salida</h4>
-        <p>11:00 AM</p>
-    </div>
-  </div>
-
-  <!-- Habitación Ejecutiva -->
-  <div id="habitacion-ejecutiva">
-    <div>
-      <h3>Ejecutiva</h3>
-      <img src="img/habitaciones/3.jpg" width="200" alt="">
-      <img src="img/habitaciones/338-executive-room--v11426729.jpg" width="200" alt="">
-      <img src="img/habitaciones/338-executive-room--v11426830.jpg" width="200" alt="">
-      <p>Desde $4199 ARS Final por noche</p>
-      <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable, Wi Fi sin cargo adicional, climatización individual, camas sommier, servicios DDI y DDN. Las habitaciones ejecutivas además cuentan con secador de pelo empotrado, amenities especiales y room service sin cargo. Habitaciones con vista a la Plaza Independencia, bañera y balcón sujeto a disponibilidad.</p>
-      <h4>Servicios</h4>
-      <ul>
-        <li>Aire Acondicionado</li>
-        <li>Caja Fuerte</li>
-        <li>Minibar</li>
-        <li>Ducha</li>
-        <li>Toallas</li>
-        <li>Teléfono</li>
-        <li>LCD</li>
-        <li>Internet sin cargo adicional (WiFi)</li>
-        <li>Prohibido fumar en las habitaciones </li>
-      </ul>
-      <h4>Entrada</h4>
-        <p>03:00 PM </p>
-      <h4>Salida</h4>
-        <p>11:00 AM</p>
-    </div>
-  </div>
-
-  <!-- Restaurante  -->
-  <div id="restaurante_Info">
-    <div>
-      <h3>Restaurante Los Girasoles</h3>
-      <h4>Días y Horarios</h4>  
-      <p>Lunes a Domingos de 6:30 hs a 23:30 hs</p>  
-
-      <h4>Días y Horarios</h4>  
-      <p>Lunes a Viernes de 6:30 hs a 10:30 hs</p> 
-      <p>Sábados, Domingos y feriados de 7:00 hs a 11:00hs</p> 
-
-      <h4>Menú Ejecutivo</h4>  
-      <p>De Lunes a Viernes sólo almuerzos.</p> 
-      <p>Dos opciones de plato principal a elección + Dos opciones de postre a elección + Copa de vino o bebida sin alcohol + Servicio de cafetería.</p> 
-
-      <h4>Almuerzos y Cenas</h4>  
-      <p>Amplia carta de sabores regionales en entradas, principales y postres.</p> 
-
-      <h4>Tarde de Té</h4>  
-      <p>Disfrute de una tarde diferente junto a las exquisiteces de nuestra pastelería.
-        Reservas con seña - 72 hs de anticipación.</p>  
-
-       <!-- img del Menú -->
-      <div>
-        <img src="img/gastronomia/f3.jpg" width="200" alt="">
-        <img src="img/gastronomia/girasoles.jpg" width="200" alt="">
-        <img src="img/gastronomia/f4.jpg" width="200" alt="">
+  <!-- Habitación Standard -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="habitacion-standard">
+          <div>
+            <h3>Standard</h3>
+            <img src="img/habitaciones/1.jpg" width="200" alt="">
+            <img src="img/habitaciones/249-standard-room--v11426823.jpg" width="200" alt="">
+            <img src="img/habitaciones/249-standard-room--v11426807.jpg" width="200" alt="">
+            <p>Desde $3689 ARS Final por noche</p>
+            <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable, Room Service, Wi Fi sin cargo adicional, climatización individual, camas sommier, amenities, servicios DDI y DDN.</p>
+            <h4>Servicios</h4>
+            <ul>
+              <li>Aire Acondicionado</li>
+              <li>Caja Fuerte</li>
+              <li>Minibar</li>
+              <li>Ducha</li>
+              <li>Toallas</li>
+              <li>Teléfono</li>
+              <li>LCD</li>
+              <li>Internet sin cargo adicional (WiFi)</li>
+              <li>Prohibido fumar en las habitaciones </li>
+            </ul>
+            <h4>Entrada</h4>
+              <p>03:00 PM </p>
+            <h4>Salida</h4>
+              <p>11:00 AM</p>
+          </div>
+        </div>
       </div>
 
-        <!-- Descargar PDF Menú -->
-      <a href="#/" class="btn">Descargar Menú</a>
-    </div>
-  </div>
+      <!-- Habitación Ejecutiva -->
+      <div class="col-12">
+        <div id="habitacion-ejecutiva">
+          <div>
+            <h3>Ejecutiva</h3>
+            <img src="img/habitaciones/3.jpg" width="200" alt="">
+            <img src="img/habitaciones/338-executive-room--v11426729.jpg" width="200" alt="">
+            <img src="img/habitaciones/338-executive-room--v11426830.jpg" width="200" alt="">
+            <p>Desde $4199 ARS Final por noche</p>
+            <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable, Wi Fi sin cargo adicional, climatización individual, camas sommier, servicios DDI y DDN. Las habitaciones ejecutivas además cuentan con secador de pelo empotrado, amenities especiales y room service sin cargo. Habitaciones con vista a la Plaza Independencia, bañera y balcón sujeto a disponibilidad.</p>
+            <h4>Servicios</h4>
+            <ul>
+              <li>Aire Acondicionado</li>
+              <li>Caja Fuerte</li>
+              <li>Minibar</li>
+              <li>Ducha</li>
+              <li>Toallas</li>
+              <li>Teléfono</li>
+              <li>LCD</li>
+              <li>Internet sin cargo adicional (WiFi)</li>
+              <li>Prohibido fumar en las habitaciones </li>
+            </ul>
+            <h4>Entrada</h4>
+              <p>03:00 PM </p>
+            <h4>Salida</h4>
+              <p>11:00 AM</p>
+          </div>
+        </div>
+      </div>
+    </div>    <!--/.row -->
+  </div>  <!--/.container -->
+  
+    <!-- Restaurante  -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div id="restaurante_info">
+          <div>
+            <h3>Restaurante Los Girasoles</h3>
+            <h4>Días y Horarios</h4>  
+            <p>Lunes a Domingos de 6:30 hs a 23:30 hs</p>  
 
-  <!-- Piscina -->
-  <div id="piscina_img">
-    <div>
-      <h3>Sector Piscina</h3>
-      <img src="img/249-standard-room--v11426827.jpg" width="200" alt="">
-      <img src="img/pool--v11426826.jpg" width="200" alt="">
-      <img src="img/pool--v11426885.jpg" width="200" alt="">
-    </div>
-  </div>
+            <h4>Días y Horarios</h4>  
+            <p>Lunes a Viernes de 6:30 hs a 10:30 hs</p> 
+            <p>Sábados, Domingos y feriados de 7:00 hs a 11:00hs</p> 
 
+            <h4>Menú Ejecutivo</h4>  
+            <p>De Lunes a Viernes sólo almuerzos.</p> 
+            <p>Dos opciones de plato principal a elección + Dos opciones de postre a elección + Copa de vino o bebida sin alcohol + Servicio de cafetería.</p> 
+
+            <h4>Almuerzos y Cenas</h4>  
+            <p>Amplia carta de sabores regionales en entradas, principales y postres.</p> 
+
+            <h4>Tarde de Té</h4>  
+            <p>Disfrute de una tarde diferente junto a las exquisiteces de nuestra pastelería.
+              Reservas con seña - 72 hs de anticipación.</p>  
+
+            <!-- img del Menú -->
+            <div>
+              <img src="img/gastronomia/f3.jpg" width="200" alt="">
+              <img src="img/gastronomia/girasoles.jpg" width="200" alt="">
+              <img src="img/gastronomia/f4.jpg" width="200" alt="">
+            </div>
+
+              <!-- Descargar PDF Menú -->
+            <a href="#/">Descargar Menú</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Piscina -->
+      <div class="col-12">
+        <div id="piscina_img">
+          <div>
+            <h3>Sector Piscina</h3>
+            <img src="img/249-standard-room--v11426827.jpg" width="200" alt="">
+            <img src="img/pool--v11426826.jpg" width="200" alt="">
+            <img src="img/pool--v11426885.jpg" width="200" alt="">
+          </div>
+        </div>
+      </div>
+    </div>  <!--/.row -->
+  </div>   <!--/.container -->
 </body>
 </html>
