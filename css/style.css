@@ -1,28 +1,129 @@
 body{
-  /* font-family: tahoma; */
   font-family: impact;
+  font-size: 18px;
   line-height: 1.5;
-  background-color: #cffdf9;
-  margin: 0px 0px;
+  
+  /* margin: 0;
+  padding: 0; */
 }
 *{
   box-sizing: border-box;
 }
+/* h1{
+  margin: 0;
+} */
 
-.container{
-  width: 1200px;
-  height: auto;
-  position: relative;
+header{
+  background-image: url("../img/img-prueba.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;  
   margin: 0px auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  position: relative; 
+  max-width: 100%;
+  height: 615px;
+  width: 1500vh;
+}
+
+img{
   max-width: 100%;
 }
+a{
+  text-decoration: none;
+  color: #00c040;
+}
+
+
+
+
+/* .clearfix::after{
+  clear: both;
+  content: '';
+  display: table;
+} */
+/* .mt-15{
+  margin-top: 15px;
+} */
+/* .mt-10{
+  margin-top: 10px;
+} */
+/* .mt-15{
+  margin-bottom: 15px;
+} */
+/* .mb-15{
+  margin-bottom: 15px;
+} */
+/* .mb-30{
+  margin-bottom: 30px;
+} */
+.center-block{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-center-m{
+  margin-left: auto;
+  max-width: auto;
+}
+.img-center-d{
+  display: block;
+  margin: 0px auto;
+}
+/* .float-right{
+  float: right;
+} */
+/* .float-left{ 
+  float: left;
+} */
+/* .bg-01{
+  background-color: #C3F4EF;
+} */
+/* .bg-02{
+  background-color: #6a9c9c;
+} */
+/* .bg-03{
+  background-color: #122727;
+} */
+/* .bg-black{
+  background-color: #000;
+} */
+/* .bg-white{
+  background-color: #fff;
+} */
+/* .text-danger{
+  color: red;
+} */
+/* .d-block{
+  display: block;
+} */
+/* .d-inline{
+  display: inline;
+} */
+/* .text-danger{
+  color: #ff0000;
+}
+.text-alert{
+  color: #ffff00;
+}
+.text-center{
+  text-align: center;
+} */
+/* .text-muted{
+  color: #494747;
+}*/
+.border{
+  border: green 2px solid;
+}
+/*.radius-50{
+  border-radius: 50%;
+} */
+
 .row{
   margin-right: -15px;
   margin-left: -15px;
 }
-.col-1,
+.col-1, 
 .col-2,
 .col-3,
 .col-4,
@@ -37,10 +138,9 @@ body{
   position: relative;
   float: left;
   min-height: 1px;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
 .col-12{
   width: 100%;
 }
@@ -77,3 +177,248 @@ body{
 .col-1{
   width: 8.333333%;
 }
+
+.container{
+  width: 1200px;  
+  /* height: auto; */
+  position: relative;
+  display: block;
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 100%;
+  border: rgb(245, 10, 174) 3px solid;
+}
+
+.form-header{
+  z-index: 650;
+  padding: 20px 10px 20px 60px;
+  background-color: rgb(0, 128, 128, 2);
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 1100px;
+  top: 547px;
+  max-width: 100%;
+}
+
+.navbar{
+  position: fixed;
+  z-index: 700;
+  background-color: rgba(157, 252, 252, 0.5);
+  margin: auto;
+  width: 100%;
+  display: inline-block;
+}
+  .navbar-brand {
+    margin:20px 0px 5px;
+  }
+  .navbar-brand img {
+    width:200px;
+  }
+  .navbar-menu{
+    position: relative;
+    top: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(11, 166, 238);
+  }
+  .menu-item{
+    position: relative;
+    float: left;
+  }
+  .menu-link{
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: coral;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .menu-link:hover{
+    background-color: darkgreen;
+    color: darkmagenta;
+  }
+
+.section{
+  width: 100%;
+  position: relative;
+  float: left;
+  border: mediumblue 2px solid;
+}
+  .section-bienvenida{
+    background-color: red;
+    padding: 20px 10px 20px 60px;
+    top: 0;
+  }
+  .section-bienvenida img{
+    border: rgb(14, 155, 73) 2px solid;
+    padding: 50px 0px 50px 60px;
+  }
+  .section-bienvenida h2{
+    border: mediumorchid 2px solid;
+    margin: 25px 0px;
+    display: inline-block;
+  }
+  .section-bienvenida p{
+    border: mediumspringgreen 2px solid;
+    margin: 10px 30px 10px 0px ;
+  }
+
+  .section-hab{
+    background-color: red;
+    top: 0;
+  }
+  .section-hab h2{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    margin: 0px;
+    top: 0;
+  }
+  .section-hab img{
+    margin: auto; 
+    display: inline-block;
+  }
+  .section-hab h3{
+    border:rgb(43, 255, 0) 2px solid;
+    padding: 0px 0px 15px 0px;
+    margin: 0;
+  }
+  .section-hab p{
+    border:blue 2px solid;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  .section-promos{
+    background-color: red;
+    padding: 20px 10px 20px 60px;
+    top: 0;
+  }
+
+  .section-servicios{
+    background-color: red;
+    padding: 20px 10px 20px 60px;
+    top: 0;
+  }
+
+  .section-restaurante{
+    background-color: red;
+    padding: 20px 10px 20px 60px;
+    top: 0;
+  }
+
+  .section-piscina{
+    width: 100%;
+    position: relative;
+    float: left;
+    border: mediumblue 2px solid;
+  }
+
+.footer{
+  width: 100%;
+  position: relative;
+  float: left;
+  border: mediumblue 2px solid;
+}
+
+.subfooter{
+  width: 100%;
+  position: relative;
+  float: left;
+  border: mediumblue 2px solid;
+}
+
+
+
+
+
+
+
+
+.modal-hab-standard{
+  border: red 3px solid;
+  position: relative;
+  display: inline-block;
+}
+
+.modal-hab-ejecutiva{
+  border: red 3px solid;
+  position: relative;
+  display: inline-block;
+}
+
+.modal-restaurante{
+  border: red 3px solid;
+  position: relative;
+  display: inline-block;
+}
+
+.modal-piscina{
+  border: red 3px solid;
+  position: relative;
+  display: inline-block;
+}
+
+/* .modal_mask{
+  position:fixed;
+  top:-700px;
+  right:0;
+  bottom:0;
+  left:0;
+  background-color:rgba(0,0,0,.3);
+  opacity:0;
+  pointer-events:none;
+  transition:all 400ms ease-in-out;
+} */
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
