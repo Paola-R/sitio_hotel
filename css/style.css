@@ -14,13 +14,14 @@ body{
 } */
 
 header{
-  background-image: url("../img/img-prueba.jpg");
+  background-image: url("../img/entrada.jpg");
+  /* background-image: linear-gradient(to bottom, rgb(255, 255, 255, 0.3) 10%, rgb(255, 255, 255, 0) 20%), */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   display: block;  
   margin: 0px auto;
-  position: relative; 
+  /* position: relative;  */
   max-width: 100%;
   height: 615px;
   width: 1500vh;
@@ -33,9 +34,6 @@ a{
   text-decoration: none;
   color: #00c040;
 }
-
-
-
 
 /* .clearfix::after{
   clear: both;
@@ -62,20 +60,22 @@ a{
   margin-left: auto;
   margin-right: auto;
 }
-.img-center-m{
+.center-m{
   margin-left: auto;
   max-width: auto;
 }
-.img-center-d{
+.center-d{
   display: block;
   margin: 0px auto;
 }
-/* .float-right{
+.float-right{
   float: right;
-} */
-/* .float-left{ 
+}
+.float-left{ 
   float: left;
-} */
+}
+
+
 /* .bg-01{
   background-color: #C3F4EF;
 } */
@@ -115,10 +115,6 @@ a{
 .border{
   border: green 2px solid;
 }
-/*.radius-50{
-  border-radius: 50%;
-} */
-
 .row{
   margin-right: -15px;
   margin-left: -15px;
@@ -178,6 +174,51 @@ a{
   width: 8.333333%;
 }
 
+.btn{
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none;
+  color: darkmagenta;
+}
+.btn-hab{
+  padding: 6px 15px;
+  margin: 0px;
+  border-radius: 6px;
+  text-transform: none;
+  font-family: sans-serif;
+  background: #3b7861;
+  color: #F2F2F2;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.btn-promo{
+  padding: 6px 15px;
+  margin: 0px ;
+  border-radius: 6px;
+  text-transform: none;
+  font-family: sans-serif;
+  background: #3b7861;
+  color: #F2F2F2;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.btn-terminos{ 
+  margin: 60px 530px 35px; 
+  display: inline-block;
+  padding: 3px 20px;
+  border-radius: 4px;
+  border: 2px solid #0a6d6e;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  text-align: center; 
+  width: auto;
+}
+
 .container{
   width: 1200px;  
   /* height: auto; */
@@ -187,7 +228,6 @@ a{
   padding-left: 15px;
   padding-right: 15px;
   max-width: 100%;
-  border: rgb(245, 10, 174) 3px solid;
 }
 
 .form-header{
@@ -206,24 +246,26 @@ a{
 .navbar{
   position: fixed;
   z-index: 700;
-  background-color: rgba(157, 252, 252, 0.5);
   margin: auto;
   width: 100%;
-  display: inline-block;
 }
   .navbar-brand {
-    margin:20px 0px 5px;
+    margin: 0px;
+    /* background-color: rgb(217, 230, 229, .6); */
+    border-radius: 0px 0px 3px 3px;
+    height: auto;
+    width: 80%;
   }
   .navbar-brand img {
     width:200px;
+    margin: 10px 0px 0px;
   }
   .navbar-menu{
-    position: relative;
     top: 25px;
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: rgb(11, 166, 238);
+    /* background-color: rgb(11, 166, 238); */
   }
   .menu-item{
     position: relative;
@@ -231,105 +273,286 @@ a{
   }
   .menu-link{
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 10px;
+    margin: 30px 10px 50px 0px;
     text-decoration: none;
-    color: coral;
-    text-transform: uppercase;
-    font-weight: 600;
+    color: rgb(213, 213, 213);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
   }
   .menu-link:hover{
-    background-color: darkgreen;
-    color: darkmagenta;
+    background-color:#374c4c;
+    border: 1px solid #79F2E6;
+    color: rgb(255, 255, 255);
+    border-radius: 5px 5px 5px 5px;
+  }
+
+.form-header{
+  z-index: 650;
+  padding: 20px 10px 20px 10px;
+  background-color: rgb(0, 128, 128, 2);
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 1000px;
+  top: 547px;
+  max-width: 100%;
+  border-radius: 4px 0px;
+}
+
+.idioma {
+  position:relative;
+  top:20px;
+  left: 20px;
+  background-color: rgb(180, 205, 204, 0.3);
+  padding: 5px 10px;
+  border-radius: 3%;
+  }
+  .idioma:hover{
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 3%;
   }
 
 .section{
   width: 100%;
   position: relative;
   float: left;
-  border: mediumblue 2px solid;
 }
+
   .section-bienvenida{
-    background-color: red;
-    padding: 20px 10px 20px 60px;
     top: 0;
   }
   .section-bienvenida img{
-    border: rgb(14, 155, 73) 2px solid;
-    padding: 50px 0px 50px 60px;
+    width:50%;
+    margin: 40px 40px;
+
   }
   .section-bienvenida h2{
-    border: mediumorchid 2px solid;
-    margin: 25px 0px;
+    margin: 35px 0px 10px;
     display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
   }
   .section-bienvenida p{
-    border: mediumspringgreen 2px solid;
-    margin: 10px 30px 10px 0px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    width: 80%;
   }
 
   .section-hab{
-    background-color: red;
-    top: 0;
-  }
+    background-color: rgb(221, 221, 221);
+    height: 400px;
+  } 
   .section-hab h2{
+    margin-bottom: 30px;
     text-align: center;
-    padding-bottom: 10px;
-    padding-top: 15px;
-    margin: 0px;
-    top: 0;
-  }
-  .section-hab img{
-    margin: auto; 
-    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 800;
   }
   .section-hab h3{
-    border:rgb(43, 255, 0) 2px solid;
-    padding: 0px 0px 15px 0px;
-    margin: 0;
+    margin: 0px 0px 10px;
+    font-family: Arial, sans-serif;
   }
   .section-hab p{
-    border:blue 2px solid;
-    margin: 0;
-    padding-bottom: 15px;
+    margin: 0px 0px 15px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 15px;
   }
+  
+.iconos{
+  margin: 0px 5px;
+}
 
-  .section-promos{
-    background-color: red;
-    padding: 20px 10px 20px 60px;
+  .section-promo{
     top: 0;
+    display: inline-block;
   }
+    .section-promo h2{
+      margin-top: 25px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .section-promo h3{
+      margin: 0px 0px 10px;
+      font-family: Arial, sans-serif;
+    }
+    .section-promo img{
+      /* float: right; */
+      padding: 5px;
+      width: 300px;
+      display: block;
+    }
+    .section-promo p{
+      margin: 0px 0px 15px;
+      font-family: Arial, Helvetica, sans-serif; 
+      font-size: 15px;
+      width: 90%;
+    }
 
-  .section-servicios{
-    background-color: red;
-    padding: 20px 10px 20px 60px;
-    top: 0;
-  }
+    .section-serv{
+      margin: 50px 0px;
+    }
+    .section-serv h2{
+      margin-top: 25px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .section-serv h5{
+      font-family: Arial, Helvetica, sans-serif, sans-serif;
+      font-size: 12px;
+      position: absolute;
+      display: inline-block;
+      width: auto;
+      margin: 10px 10px;
+    }
+    .section-serv img{
+      display: inline-block;
+      position: relative;
+    }
 
-  .section-restaurante{
-    background-color: red;
-    padding: 20px 10px 20px 60px;
-    top: 0;
-  }
-
-  .section-piscina{
-    width: 100%;
+  .fondo{
+    max-width: 100%;
     position: relative;
-    float: left;
-    border: mediumblue 2px solid;
+    display: inline-block;
   }
+    .bg-restaurante{
+      background: #d6d6d6 url("../img/f3.jpg") no-repeat center center; 
+      background-size: cover;
+      height: 400px;
+    }
+    
+    .caja-restaurante{      
+      margin: 50px 0px 20px 25px;
+      text-align: right; 
+      width: 50%;
+      height: 286px ;
+      float: right;
+      background-color: rgb(255, 255, 255, .9);
+    }
+    .caja-restaurante h3{
+      margin: 50px 20px 0px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .caja-restaurante p{
+      margin: 20px 20px 0px;
+      /* border: green 2px solid; */
+      margin-left: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .bg-piscina{
+      background: #d6d6d6 url("../img/pool--v11426801.jpg") no-repeat center center; 
+      background-size: cover;
+      width: 100%;
+      height: 400px;
+    }
+    .caja-piscina{      
+      margin: 50px 10px 20px 0px;
+      width: 50%;
+      background-color: rgb(255, 255, 255, .9);
+      height: 286px;
+    }
+    .caja-piscina h3{
+      margin: 50px 20px 20px 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      display: inline-block;
+    }
+    .caja-piscina p{
+      margin: 0px 20px 0px;
+      margin-left: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: left;
+    }
 
 .footer{
-  width: 100%;
-  position: relative;
-  float: left;
-  border: mediumblue 2px solid;
+  background-color: #0D7369;
 }
+
+  .mapa{
+    width: 100%;
+    height: 350px;
+    margin: 40px 0px;
+  }
+
+  .form{
+    position: absolute;
+    display: inline-block;
+    margin: 20px 0px 0px 0px;
+    top: 0;
+    height: 300px;
+  }
+
+    .form img{
+      margin: 20px 0px 0px 70px;
+      display: inline-block;
+    }
+    .form p{
+      margin: 30px 20px;
+      display: inline-block;
+      width: 250px;
+      font-family: Arial, Helvetica, sans-serif;
+      height: auto;
+      color: #ffffff;
+    }
+    .form a{
+      margin: 0px 30px;
+      display: inline-block;
+
+    }
+    .form form{
+      margin: 5px 0px 0px 155px;
+      display: inline-block;
+      padding: 0px 0px 0px;
+    }
+    .form form input{
+      margin: 10px 0px 0px 0px;
+      padding: 5px 0px 7px 10px;
+      display: block;
+      float: right;
+      width: 100%; 
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 17px;
+    }
+    .form form textarea{
+      font-family: sans-serif;
+      font-weight: 500;
+      float: right;
+      width: auto;
+      margin: 10px 0px 0px 0px;
+      height: 150px;
+    }
+
+    .contacto{
+      margin: 10px 0px 0px 0px;
+      padding: 5px 0px 0px 0px;
+      display: inline-block;
+      width: 100%;
+      }
+    .contacto a{
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+      margin: 0px 15px;
+      font-size: 17px;
+      padding: 0px 15px 20px;
+    }
 
 .subfooter{
+  font-family: sans-serif;
+  background-color: #0D7369;
+  text-align: center;
+  color: rgb(255, 255, 255);
   width: 100%;
   position: relative;
-  float: left;
-  border: mediumblue 2px solid;
+  display: inline-block;
 }
 
 
@@ -339,7 +562,7 @@ a{
 
 
 
-.modal-hab-standard{
+/* .modal-hab-standard{
   border: red 3px solid;
   position: relative;
   display: inline-block;
@@ -361,7 +584,7 @@ a{
   border: red 3px solid;
   position: relative;
   display: inline-block;
-}
+} */
 
 /* .modal_mask{
   position:fixed;

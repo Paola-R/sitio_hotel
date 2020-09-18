@@ -17,7 +17,7 @@
       <div class="row">
 
         <!--Link Logo -->
-        <div class="col-2">
+        <div class="col-3">
           <h1 class="navbar-brand">
             <a href="index.html">
               <img src="img/logo_01.png" alt="Argentino Hotel">
@@ -26,8 +26,8 @@
         </div>
 
         <!-- Menú Principal -->
-        <div class="col-9">
-          <ul class="navbar-menu">
+        <div class="col-8">
+          <ul class="navbar-menu float-right">
             <li class="menu-item"><a href="index.html" class="menu-link">Inicio</a></li>
             <li class="menu-item"><a href="#habitaciones" class="menu-link">Habitaciones</a></li>
             <li class="menu-item"><a href="#servicios" class="menu-link">Servicios</a></li>
@@ -39,7 +39,7 @@
 
         <!-- Idiomas -->
         <div class="col-1">
-          <a href="en/index.html">
+          <a href="en/index.html" class="idioma">
             <img src="img/eeuu.png" alt="">
           </a>
         </div>
@@ -67,7 +67,7 @@
         </select>
 
         <!-- Botón Enviar -->
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" >
       </form>
   </header>  
 
@@ -76,15 +76,15 @@
   <main>
 
     <!-- SECTION Bienvenida -->
-    <section class="section">
+    <section class="section section-bienvenida">
       <div class="container">
         
         <div class="row">
-          <div class="col-4">
-            <img src="img/Bienvenidos.jpg" alt="">
+          <div class="col-5">
+            <img src="img/Bienvenidos.jpg" class="float-right" alt="">
           </div>
 
-          <div class="col-8">
+          <div class="col-7">
             <h2>Bienvenidos a Nuestro Hotel</h2>
             <p>Ubicados frente a la Plaza Independecia, en pleno centro de la ciudad, un hotel único por sus servicios y estilo.</p>
             <p>46 habitaciones con todas las comodidades, piscina, sala de reuniones, WiFi sin cargo en las habitaciones y áreas comunes, cajas de seguridad, y un cálido Restó, con una carta de vinos cuidadosamente seleccionada.</p>
@@ -95,7 +95,7 @@
     </section>  <!-- /.section -->
 
     <!-- SECTION Habitaciones -->
-    <section id="habitaciones" class="section">
+    <section id="habitaciones" class="section section-hab">
       <div class="container">
 
         <div class="row">
@@ -113,12 +113,12 @@
             <article>
               <h3>Standard</h3>
               <div>
-                <img src="img/iconos/icon-cajaf.png" alt="">
-                <img src="img/iconos/icon-frigo.png" alt="">
-                <img src="img/iconos/icon-aire.png" alt="">
+                <img src="img/iconos/icon-cajaf.png"  class="iconos" alt="">
+                <img src="img/iconos/icon-frigo.png"  class="iconos" alt="">
+                <img src="img/iconos/icon-aire.png" class="iconos" alt="">
               </div>
               <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable...</p>
-              <a href="#/">Ver Más</a>
+              <a href="#/" class="btn btn-hab">Ver Más</a>
             </article>
           </div>
 
@@ -130,26 +130,29 @@
             <article>
               <h3>Ejecutiva</h3>
               <div>
-                <img src="img/iconos/icon-cajaf.png" alt="">
-                <img src="img/iconos/icon-frigo.png" alt="">
-                <img src="img/iconos/icon-aire.png" alt="">
+                <img src="img/iconos/icon-cajaf.png"  class="iconos" alt="">
+                <img src="img/iconos/icon-frigo.png" class="iconos" alt="">
+                <img src="img/iconos/icon-aire.png" class="iconos" alt="">
               </div>
               <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable...</p>
-              <a href="#/">Ver más</a>
+              <a href="#/" class="btn btn-hab">Ver más</a>
             </article>
           </div>
         </div>  <!-- /.row -->
 
         <div class="row">
           <div class="col-12">
-            <a href="#">Términos</a>
+            <a href="#/" class="btn btn-terminos">Términos</a>
           </div>
-        </div>   <!-- /.row -->
+        </div> 
+     
       </div>  <!-- /.container -->
     </section>
 
+  
+
     <!-- SECTION Promociones -->
-    <section id="promociones" class="section">
+    <section id="promociones" class="section section-promo">
       <div class="container">
 
         <div class="row">
@@ -158,41 +161,54 @@
           </div>
         </div>  <!-- /.row -->
 
-        <div class="row">
-          <div class="col-12">
-            <article>
-              <img src="img/argentino-hotel12.jpg" width="300" alt="">
+        <article class="section-promo">
+          <div class="row">
+            <div class="col-5">
+              <img src="img/argentino-hotel12.jpg" class="center-d" alt="">
+            </div>
+          
+            <div class="col-7">
               <h3>Temporada Baja</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci assumenda facere, soluta vitae nostrum dolorem?</p>
-              <a href="#/">Ver más</a>
-            </article>
+              <a href="#/" class="btn btn-promo">Ver más</a>
+            </div>
           </div>
-
-          <div class="col-12">
-            <article>
-              <img src="img/argentino-hotel12.jpg" width="300" alt="">
+        </article>
+               
+        <article class="section-promo">
+          <div class="row">
+            <div class="col-5">
+              <img src="img/argentino-hotel12.jpg" class="center-d" alt="">
+            </div>
+          
+            <div class="col-7">
               <h3>Temporada Baja</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci assumenda facere, soluta vitae nostrum dolorem?</p>
-              <a href="#/">Ver más</a>
-            </article>
+              <a href="#/" class="btn btn-promo">Ver más</a>
+            </div>
           </div>
-
-          <div class="col-12">
-            <article>
-              <img src="img/argentino-hotel12.jpg" width="300" src="https://via.placeholder.com/300x150" alt="">
+        </article>
+      
+        <article class="section-promo">
+          <div class="row">
+            <div class="col-5">
+              <img src="img/argentino-hotel12.jpg"  src="https://via.placeholder.com/300x150" class="center-d" alt="">
+            </div>
+          
+            <div class="col-7">
               <h3>Temporada Baja</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci assumenda facere, soluta vitae nostrum dolorem?</p>
-              <a href="#/">Ver más</a>
-            </article>
+              <a href="#/" class="btn btn-promo">Ver más</a>
+            </div>
           </div>
-        </div>  <!-- /.row -->
+        </article>
       </div>    <!-- /.container -->
     </section>
  
 
     <!-- ASIDE Opinión Clientes -->
     <aside id="opinion-clientes">
-      <img src="https://via.placeholder.com/1500x400?text=Opinión%20Clientes"alt="">
+      <img src="https://via.placeholder.com/1500x400?text=Opinión%20Clientes" class=" center-block" alt="">
       <div class="container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam libero veniam. Aut, tenetur minus.</p>
         <p>Nombre del Cliente</p>
@@ -200,166 +216,150 @@
     </aside>
 
     <!-- SECTION Servicios -->
-    <section id="servicios"class="section">
+    <section id="servicios" class="section section-serv">
       <div class="container">
       
         <div class="row">
           <div class="col-12">
-          <h2>Servicios</h2>
+            <h2>Servicios</h2>
           </div>
         </div>  <!-- /.row -->
-      
+
         <div class="row">
-          <div class="col-1">
-            <article>
+          <div class="col-3">
+
+            <div  class="section-serv">
               <img src="img/iconos/icon-aire.png" alt="">
               <h5>Aire Acondicionado</h5>
-            </article>
-
-            <article>
+            </div>
+  
+            <div  class="section-serv">
               <img src="img/iconos/icon-cajaf.png" alt="">
               <h5>Caja Fuerte</h5>
-            </article>
+            </div>
 
-            <article>
+            <div class="section-serv">
               <img src="img/iconos/icon-ducha.png" alt="">
               <h5>Ducha</h5>
             </article>
-          </div>
+            </div>
 
-          <div class="col-1">
-            <article>
+            <div class="section-serv">
               <img src="img/iconos/icon-fono.png" alt="">
               <h5>Teléfono</h5>
-            </article>
+            </div>
+          </div>
 
-            <article>
+          <div class="col-3"> 
+            
+            <div class="section-serv">
               <img src="img/iconos/icon-frigo.png" alt="">
               <h5>Minibar</h5>
-            </article>
-
-            <article>
+            </div>
+          
+            <div class="section-serv">
               <img src="img/iconos/icon-toalla.png" alt="">
               <h5>Toallas</h5>
             </article>
-          </div>
+            </div>
 
-          <div class="col-1">
-            <article>
+            <div class="section-serv">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Internet de alta velocidad gratuito (WiFi)</h5>
-            </article>
+            </div>
 
-            <article>
+            <div class="section-serv">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>LCD</h5>
-            </article>
+            </div>
+          </div>
 
-            <article>
+          <div class="col-3">
+
+            <div class="section-serv">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Estacionamiento gratis</h5>
             </article>
-          </div>
-
-          <div class="col-1">
-            <article>
+            </div>
+          
+            <div class="section-serv">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Almacenamiento de equipaje</h5>
-            </article>
+            </div>
 
-            <article>
+            <div class="section-serv">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Recepción disponible las 24 horas</h5>
-            </article>
+            </div>
 
-            <article>
+            <div class="section-serv">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Desayuno gratis</h5>
-            </article>
+            </div>
           </div>
 
-          <div class="col-1">
-            <article>
+          <div class="col-3">
+
+            <div class="section-serv">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Conserje</h5>
-            </article>
+            </div>
 
-            <article>
+            <div class="section-serv">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Servicio de planchado</h5>
-            </article>
+            </div>
 
-            <article>
+            <div class="section-serv">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Servicio de lavandería</h5>
             </article>
-          </div>
+            </div>
 
-          <div class="col-1">
-            <article>
+            <div class="section-serv">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Restaurante</h5>
-            </article>
-
-            <article>
-              <img src="img/iconos/icon-st.png" alt="">
-              <h5>Bar/Salón</h5>
-            </article>
+            </div>
           </div>
-        </div>  <!-- /.row -->
-      </div>   <!-- /.container -->
-    </section>  
+        </div>
+      </div>
+    </section>
         
     <!-- SECTION Restaurante -->
     <section id="restaurante" class="section">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h3>Restaurante</h3>
-          </div>
-        </div>  <!-- /.row -->
-      
-        <div class="row">
-          <div class="col-4">
-            <img src="img/gastronomia/f1.jpg" width="500" alt="">
-          </div>
-        </div>   <!-- /.row -->
-
-        <div class="row">
-          <div class="col-8">
-            <article>
-              <h3>Los Girasoles</h3>
-              <p>Nuestro restaurante Los Girasoles Restó ofrece un ambiente distendido y ameno para disfrutar durante un viaje de negocios, en familia o con amigos una cocina simple que combina sabores y aromas de Mendoza.</p>
-              <a href="#/">Ver más</a>
-            </article>
-          </div>
-        </div>  <!-- /.row -->
+        
+        <div class="fondo bg-restaurante">
+          <div class="row">
+    
+            <div class="col-12">
+              <div class="caja-restaurante">
+                <h3>Los Girasoles</h3>
+                <p>Nuestro restaurante Los Girasoles Restó ofrece un ambiente distendido y ameno para disfrutar durante un viaje de negocios, en familia o con amigos una cocina simple que combina sabores y aromas de Mendoza.</p>
+                <a href="#/">Ver más</a>
+              </div>
+            </div>
+            </div>
+          </div>  <!-- /.row -->
+        </div>
       </div> <!-- /.container -->
     </section>
     
     <!-- SECTION Piscina -->
     <section id="piscina" class="section">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h3>Piscina</h3>
-          </div>
-        </div> <!--/.row -->
-      
 
-        <div class="row">
-          <div class="col-4">
-            <img src="img/2.jpg" alt="">
-          </div>
-        </div>   <!-- /.row -->
+          <div class="fondo bg-piscina">
+            <div class="row">
 
-        <div class="row">
-          <div class="col-8">
-            <article>
-              <h3>Piscina</h3>
-              <p>Argentino Hotel cuenta con un sector de piscina donde podrá relajarse y disfrutar del sol mendocino. Habilitada de Noviembre a Febrero.</p>
-              <a href="#/">Ver más</a>
-            </article>
+              <div class="col-12">
+                <div class="caja-piscina">
+                  <h3>Piscina</h3>
+                  <p>Argentino Hotel cuenta con un sector de piscina donde podrá relajarse y disfrutar del sol mendocino. Habilitada de Noviembre a Febrero.</p>
+                  <a href="#/">Ver más</a>
+                </div>
+              </div>                
+            </div>
           </div>
         </div>  <!-- /.row -->
       </div> <!-- /.container -->
@@ -369,44 +369,61 @@
   <!-- Comienzo FOOTER
   ==================== -->
   
-  <footer class="footer">  
+  <footer  class="section footer">  
     <div  class="container">
 
-      <div class="row">
-        <div class="col-4">
+        <div class="row">
+          <div class="col-5">
 
-          <!-- Mapa -->
-          <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13401.496066903443!2d-68.85010468734133!3d-32.888278162663596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbc763b4206e9d2a0!2sHotel%20Argentino!5e0!3m2!1ses-419!2sar!4v1595880042886!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <!-- Mapa -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13401.496066903443!2d-68.85010468734133!3d-32.888278162663596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbc763b4206e9d2a0!2sHotel%20Argentino!5e0!3m2!1ses-419!2sar!4v1595880042886!5m2!1ses-419!2sar" style="border:0;" allowfullscreen=""  class="mapa center-block" aria-hidden="false" tabindex="0"></iframe>
           </div>
         </div>
 
-        <div class="col-8">
-          <div class="row">
-            <!-- Caja Left -->
-            <div class="col-4">
-              <img src="img/logo_02.jpg" width="150" alt="">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In odio architecto doloribus quos beatae ex?</p>
-            </div>
-          
-            <div class="col-4">
-              <!-- Formulario =============================== -->
-              <form action="procesar-info.php" method="post">
-                <input type="text" placeholder="Nombre y Apellido">
-                <input type="email" placeholder="Email" required>
-                <textarea name="Comentario" id="Comentario" cols="30" rows="10">Ingrese Comentario...</textarea>
-                <input type="submit" value="Enviar mensaje">
-              </form>
-            </div>
-
+        <div class="form">
+          <div class="col-7">
+            
             <div class="row">
+
+              <!-- Caja Left -->
+              <!-- <div   class="form"> -->
+                <div class="col-4">
+                  
+                  <img src="img/logo_02.jpg" width="150" alt="">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In odio architecto doloribus quos beatae ex?</p>
+                </div>
+              
+                <div class="col-4">
+
+                  <!-- Formulario =============================== -->
+                  <form action="procesar-info.php" method="post">
+                    <input type="text" placeholder="Nombre y Apellido">
+                    <input type="email" placeholder="Email" required>
+                    <textarea name="Comentario" id="Comentario" cols="30" rows="10">Ingrese Comentario...</textarea>
+                    <input type="submit" value="Enviar mensaje">
+                  </form>
+                </div>
+              <!-- </div> -->
+            
+              
+            </div>
+          </div> <!-- /.row -->
+
+          <div class="contacto">
+            <div class="row">
+
               <!-- Caja Bottom -->
               <div class="col-12">
-                <div>
+                <!-- <div class="contacto"> -->
                   <a href="tel:5492616109349">5492616109349</a>
                   <a href="mailto:info@argentino-hotel.com">info@argentino-hotel.com</a>
                   <a href="https://api.whatsapp.com/send?phone=+5492616109349&text=holaa">WhatsApp</a>
-                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+          </div>
+
+
               </div>
             </div> <!-- /.row -->
           </div>  <!-- /.row --> 
@@ -421,7 +438,60 @@
       <div class="row">
         <div class="col-12">
           <div>
-            <p>Diseñado y Desarrollado por <a href="">Paola Romero</a></p>
+          <p>Diseñado y Desarrollado por <a href="">Paola Romero</a></p>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
+          </div>
+        </div> 
           </div>
         </div> 
       </div>   <!-- /.row -->
