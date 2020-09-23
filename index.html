@@ -54,7 +54,7 @@
     <!-- Formulario Principal -->
       <form action="procesar-info-php" method="post" class="form-header">
         <!-- <label for="">Nombre y Apellido</label> -->
-        <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+        <input type="text" name="nombre" placeholder="Nombre y Apellido" required class="input">
         <label for="check-in">check-in</label>
         <input type="date" id="check-in" name="check-in">
         <label for="check-out">check-out</label>
@@ -67,7 +67,7 @@
         </select>
 
         <!-- Botón Enviar -->
-        <input type="submit" value="Enviar" >
+        <input type="submit" value="Enviar" class="btn-in">
       </form>
   </header>  
 
@@ -152,7 +152,7 @@
   
 
     <!-- SECTION Promociones -->
-    <section id="promociones" class="section section-promo">
+    <section id="promociones" class="section">
       <div class="container">
 
         <div class="row">
@@ -216,7 +216,7 @@
     </aside>
 
     <!-- SECTION Servicios -->
-    <section id="servicios" class="section section-serv">
+    <section id="servicios" class="section">
       <div class="container">
       
         <div class="row">
@@ -228,23 +228,23 @@
         <div class="row">
           <div class="col-3">
 
-            <div  class="section-serv">
+            <div  class="section">
               <img src="img/iconos/icon-aire.png" alt="">
               <h5>Aire Acondicionado</h5>
             </div>
   
-            <div  class="section-serv">
+            <div  class="">
               <img src="img/iconos/icon-cajaf.png" alt="">
               <h5>Caja Fuerte</h5>
             </div>
 
-            <div class="section-serv">
+            <div class="">
               <img src="img/iconos/icon-ducha.png" alt="">
               <h5>Ducha</h5>
             </article>
             </div>
 
-            <div class="section-serv">
+            <div class="">
               <img src="img/iconos/icon-fono.png" alt="">
               <h5>Teléfono</h5>
             </div>
@@ -433,67 +433,14 @@
   </footer>
 
   <!--SUBFOOTER -->
-  <div class="subfooter">
+  <div class=" section subfooter">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div>
+        
           <p>Diseñado y Desarrollado por <a href="">Paola Romero</a></p>
         </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
-          </div>
-        </div> 
+      
       </div>   <!-- /.row -->
     </div>
   </div>  
@@ -503,27 +450,25 @@
   ========================================================= -->
 
   <!-- Habitación Standard -->
-  <div  id="habitacion-standard" class="section">
-    <div class="container">
+  <div  id="habitacion-standard" class="container">
+    <div class="modal-hab-standard">
 
       <!-- <a href="#/" class="cerrar">cerrar</a> -->
       <div class="row">
         <div class="col-12">
           <div>
-            <h3>Standard</h3>
+            <h3>Habitación Standard</h3>
           </div>
         </div>
       </div>  <!-- /.row -->  
 
       <div class="row">
-        <div class="col-2">
-          <img src="img/habitaciones/1.jpg" width="200" alt="">
-        </div>
-        <div class="col-2">
-          <img src="img/habitaciones/249-standard-room--v11426823.jpg" width="200" alt="">
-        </div>
-        <div class="col-2">
-          <img src="img/habitaciones/249-standard-room--v11426807.jpg" width="200" alt="">
+        <div class="col-12">
+          <img src="img/habitaciones/249-standard-room--v11426878.jpg"  alt="">
+        
+          <img src="img/habitaciones/249-standard-room--v11426823.jpg"  alt="">
+       
+          <img src="img/habitaciones/249-standard-room--v11426807.jpg"  alt="">
         </div>
       </div>  <!-- /.row -->
 
@@ -555,26 +500,24 @@
 
   <!-- Habitación Ejecutiva -->
 
-  <div  id="habitacion-ejecutiva" class="section">
-    <div class="container">
+  <div  id="habitacion-ejecutiva" class="container">
+    <div class="modal-hab-ejecutiva">
     
       <div class="row">
         <div class="col-12">
           <div>
-            <h3>Ejecutiva</h3>
+            <h3>Habitación Ejecutiva</h3>
           </div>
         </div>
       </div>   <!-- /.row -->
 
       <div class="row">
-        <div class="col-2">
-          <img src="img/habitaciones/3.jpg" width="200" alt="">
-        </div>
-        <div class="col-2">
-          <img src="img/habitaciones/338-executive-room--v11426729.jpg" width="200" alt="">
-        </div>
-        <div class="col-2">
-          <img src="img/habitaciones/338-executive-room--v11426830.jpg" width="200" alt="">
+        <div class="col-12">
+          <img src="img/habitaciones/338-executive-room--v11426729.jpg"  alt="">
+        
+          <img src="img/habitaciones/338-executive-room--v11426729.jpg"  alt="">
+      
+          <img src="img/habitaciones/338-executive-room--v11426830.jpg"  alt="">
         </div>
       </div>   <!-- /.row -->
 
@@ -605,56 +548,56 @@
  
 
   <!-- Restaurante  -->
-  <div id="restaurante_info" class="">
-    <div class="container">
+  <div id="restaurante_info" class="container">
+    <div class="modal-restaurante">
 
       <!-- <a href="#/" class="cerrar">cerrar</a> -->
       <div class="row">
         <div class="col-12">
           <h3>Restaurante Los Girasoles</h3>
         </div>
+      </div>
 
-        <div class="row">
-          <div class="col-8">
-            <h4>Días y Horarios</h4>  
-            <p>Lunes a Domingos de 6:30 hs a 23:30 hs</p>  
+      <div class="row">
+        <div class="col-7">
+          <h4>Días y Horarios</h4>  
+          <p>Lunes a Domingos de 6:30 hs a 23:30 hs</p>  
 
-            <h4>Días y Horarios</h4>  
-            <p>Lunes a Viernes de 6:30 hs a 10:30 hs</p> 
-            <p>Sábados, Domingos y feriados de 7:00 hs a 11:00hs</p> 
+          <h4>Días y Horarios</h4>  
+          <p>Lunes a Viernes de 6:30 hs a 10:30 hs</p> 
+          <p>Sábados, Domingos y feriados de 7:00 hs a 11:00hs</p> 
 
-            <h4>Menú Ejecutivo</h4>  
-            <p>De Lunes a Viernes sólo almuerzos.</p> 
-            <p>Dos opciones de plato principal a elección + Dos opciones de postre a elección + Copa de vino o bebida sin alcohol + Servicio de cafetería.</p> 
+          <h4>Menú Ejecutivo</h4>  
+          <p>De Lunes a Viernes sólo almuerzos.</p> 
+          <p>Dos opciones de plato principal a elección + Dos opciones de postre a elección + Copa de vino o bebida sin alcohol + Servicio de cafetería.</p> 
 
-            <h4>Almuerzos y Cenas</h4>  
-            <p>Amplia carta de sabores regionales en entradas, principales y postres.</p> 
+          <h4>Almuerzos y Cenas</h4>  
+          <p>Amplia carta de sabores regionales en entradas, principales y postres.</p> 
 
-            <h4>Tarde de Té</h4>  
-            <p>Disfrute de una tarde diferente junto a las exquisiteces de nuestra pastelería.</p>
-            <p> Reservas con seña - 72 hs de anticipación.</p>  
+          <h4>Tarde de Té</h4>  
+          <p>Disfrute de una tarde diferente junto a las exquisiteces de nuestra pastelería.</p>
+          <p> Reservas con seña - 72 hs de anticipación.</p>  
+        </div>
+
+        <!-- img del Menú -->
+        <div class="col-5">
+          
+          <div>
+            <img src="img/gastronomia/f3.jpg" alt="">
+            <img src="img/gastronomia/girasoles.jpg" alt="">
+            <img src="img/gastronomia/f4.jpg" alt="">
           </div>
+        </div>
+      </div>  <!-- /.row -->
 
-          <!-- img del Menú -->
-          <div class="col-4">
-            <div class="row">
-              <div class="col-9">
-                <img src="img/gastronomia/f3.jpg" alt="">
-              </div>
-              <div class="col-9">
-                <img src="img/gastronomia/girasoles.jpg" alt="">
-              </div>
-              <div class="col-9">
-                <img src="img/gastronomia/f4.jpg" alt="">
-              </div>
-            </div>  <!-- /.row -->
-          </div>
-        </div>  <!-- /.row -->
-      </div>   <!-- /.row --> 
       <div class="row">
         <div class="col-12">
+          
           <!-- Descargar PDF Menú -->
-          <a href="#/">Descargar Menú</a>
+         
+          <!-- <a href=terminos.pdf" download="terminos">Términos</a> -->
+          <!-- <a href=img/8.jpg" download>Términos</a> -->
+          <!-- <a href="#/" class="btn" >Descargar Menú</a> -->
         </div>
       </div> <!-- /.row -->
     </div>  <!-- /.container -->
@@ -663,19 +606,81 @@
 
   <!-- Piscina -->
   <div class="container">
-    <div id="piscina_img" class="">
+    <div id="piscina_img" class="modal-piscina">
+      
       <div class="row">
-        <div class="col-4">
-          <img src="img/249-standard-room--v11426827.jpg" width="400" alt="">
+        <div class="col-12">
+          <h3>Sector Piscina</h3>
         </div>
-        <div class="col-4">
-          <img src="img/pool--v11426826.jpg" width="400" alt="">
-        </div>
-        <div class="col-4">
-          <img src="img/pool--v11426885.jpg" width="400" alt="">
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+
+          <img src="img/249-standard-room--v11426827.jpg"  alt="">
+          <img src="img/pool--v11426826.jpg"  alt="">
+          <img src="img/pool--v11426885.jpg"  alt="">
         </div>
       </div>   <!-- /.row -->
     </div>
   </div>   <!--/.container -->
+
+  <!-- Términos -->
+  <div class="container">
+    <div id="terminos" class="modal-terminos">
+      
+      <div class="row">
+        <div class="col-12">
+          <h3>Términos y Condiciones</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+
+          <h4>Reservas</h4>
+          <h5>Se requiere si o si una de las siguientes garantías:</h5>
+          <ul>
+            <li>1. Tarjeta de crédito internacional.</li>
+            <li>2. Prepago en efectivo en mostrador.</li>
+            <li>3. Depósito / Transferencia en Banco Francés.</li>
+          </ul>
+
+          <h5>Formas de pago</h5>
+          <ul>
+            <li>- VISA, MASTERCARD, AMEX, DINERS ( en un sólo pago )</li>
+            <li>- Efectivo en pesos argentinos. </li>
+            <li>- Dólares tomados al tipo de cambio de Banco Nación. </li>
+            <li>- Transferencia bancaria o depósito. </li>
+          </ul>
+
+          <h5>Facturación</h5>
+          <p>Facturas A: acorde a lo que exige la RG 3668 de AFIP todas las personas que requieran la discriminación de IVA en su facturación, deben presentar o en su defecto completar al check out el F8001 que oficiará como Declaración Jurada.</p>
+          <p>Facturas A: acorde a lo que exige la RG 3668 de AFIP todas las personas que requieran la discriminación de IVA en su facturación, deben presentar o en su defecto completar al check out el F8001 que oficiará como Declaración Jurada.</p>
+          <p>Facturas B: acorde a lo que exige la RG 1415 de AFIP aquellas personas cuya facturación sea igual o superior a los AR$1000 debe brindar la siguiente información: DNI/LE, dirección postal de residencia actual y teléfono.</p>
+          <p>Facturas T: acorde a lo que exige la RG 3971 y 566/2016 de AFIP se establece el Régimen de reintegro del Impuesto al Valor Agregado sobre los servicios de Alojamiento con o sin desayuno a turistas extranjeros cuya forma de pago sea Tarjeta de crédito Internacional y Agencias de Turismo Nacionales e Internacionales que reserven a turistas extranjeras y cuya forma de pago sea mediante Transferencia bancaria o Cuenta Corriente. </p>
+          
+          <h5>Políticas generales </h5>
+          <ul>
+            <li> Horario de check in: a partir de las 15 hrs.</li>
+            <li>Horario de check out: 11 hrs.</li>
+            <li>Early check in sujeto a disponibilidad con cargo de media tarifa.</li>
+            <li>Late check out hasta las 17 hrs, con cargo media tarifa; después de las 17 hrs. con cargo tarifa completa, sujeto a disponibilidad.</li>
+            <li>Room service: 10% de recargo sobre precios carta.</li>
+            <li>Niños menores de 2 años, no abonan tarifa.</li>
+            <li>Cunas disponibles.</li>
+          </ul>
+
+          <h5>Política de cancelación de reservas</h5>
+          <p>La misma es 48 hrs. anteriores a la fecha de ingreso para reservas individuales.</p> 
+          <p>En el caso de grupos será de 72hs previas al check in.</p> 
+          <p>En caso que la reserva no sea cancelada dentro del límite de tiempo estipulado se cobrará una noche de alojamiento por cada habitación reservada en concepto de No show.</p> 
+         
+          <p>Argentino Hotel es un establecimiento “libre de humo”, por lo cual no está permitido fumar en ningún lugar interno del mismo, incluidas las habitaciones. En caso de fumar dentro de la habitación la penalidad es de una noche de alojamiento.</p>
+      
+        </div>
+      </div>
+    </div>
+  </div>   <!-- conrtainer -->
 </body>
 </html>

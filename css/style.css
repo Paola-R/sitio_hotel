@@ -221,13 +221,13 @@ a{
 
 .container{
   width: 1200px;  
-  /* height: auto; */
   position: relative;
   display: block;
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
   max-width: 100%;
+  border: mediumblue 2px solid;
 }
 
 .form-header{
@@ -289,16 +289,46 @@ a{
 
 .form-header{
   z-index: 650;
-  padding: 20px 10px 20px 10px;
-  background-color: rgb(0, 128, 128, 2);
+  padding: 15px 10px 20px 10px;
+  /* background-color: rgb(0, 128, 128, 2); */
   display: block;
   position: relative;
   margin-left: auto;
   margin-right: auto; 
   width: 1000px;
-  top: 547px;
+  top: 554px;
   max-width: 100%;
-  border-radius: 4px 0px;
+  border-radius: 4px 4px 0px;
+  background-color: #143737;
+}
+.form-header input{
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px 20px 0px 5px;
+}
+.input{
+  width: 25%;
+}
+.form-header select{
+  margin: 0px 30px;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+.form-header label{
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(213, 213, 213);
+  ;
+}
+.btn-in{
+  background-color: rgb(224, 224, 224);
+ 
+  padding: 3px 15px;
+  margin: 0px;
+  border-radius: 3px;
 }
 
 .idioma {
@@ -369,26 +399,28 @@ a{
   .section-promo{
     top: 0;
     display: inline-block;
+    border: 3px solid red;
   }
     .section-promo h2{
       margin-top: 25px;
+      margin-bottom: 30px;
       text-align: center;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 22px;
       font-weight: 800;
     }
     .section-promo h3{
-      margin: 0px 0px 10px;
+      margin: 20px 0px 20px;
       font-family: Arial, sans-serif;
     }
     .section-promo img{
-      /* float: right; */
-      padding: 5px;
+      /* padding: 5px; */
       width: 300px;
       display: block;
+      margin-right: 20px;
     }
     .section-promo p{
-      margin: 0px 0px 15px;
+      margin: 0px 0px 20px;
       font-family: Arial, Helvetica, sans-serif; 
       font-size: 15px;
       width: 90%;
@@ -396,9 +428,10 @@ a{
 
     .section-serv{
       margin: 50px 0px;
+      background-color: lawngreen;
     }
     .section-serv h2{
-      margin-top: 25px;
+      /* margin-top: 25px; */
       text-align: center;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 22px;
@@ -409,12 +442,13 @@ a{
       font-size: 12px;
       position: absolute;
       display: inline-block;
-      width: auto;
       margin: 10px 10px;
+      border: green 2px solid;
     }
     .section-serv img{
       display: inline-block;
       position: relative;
+      border: red 2px solid;
     }
 
   .fondo{
@@ -475,13 +509,11 @@ a{
 .footer{
   background-color: #0D7369;
 }
-
   .mapa{
     width: 100%;
     height: 350px;
     margin: 40px 0px;
   }
-
   .form{
     position: absolute;
     display: inline-block;
@@ -489,7 +521,6 @@ a{
     top: 0;
     height: 300px;
   }
-
     .form img{
       margin: 20px 0px 0px 70px;
       display: inline-block;
@@ -551,40 +582,84 @@ a{
   text-align: center;
   color: rgb(255, 255, 255);
   width: 100%;
-  position: relative;
-  display: inline-block;
 }
 
 
-
-
-
-
-
-
-/* .modal-hab-standard{
+.modal-hab-standard{
   border: red 3px solid;
   position: relative;
   display: inline-block;
+  background-color: mediumorchid;
+  font-family: sans-serif;
 }
+.modal-hab-standard img{
+  width: 350px;
+  margin: 20px 15px;
+}
+.modal-hab-standard h3{
+  text-align: center;
+}
+
 
 .modal-hab-ejecutiva{
   border: red 3px solid;
   position: relative;
   display: inline-block;
+  background-color: mediumorchid;
+  font-family: sans-serif;
 }
+.modal-hab-ejecutiva img{
+  width: 350px;
+  margin: 20px 15px;
+}
+.modal-hab-ejecutiva h3{
+  text-align: center;
+}
+
 
 .modal-restaurante{
   border: red 3px solid;
   position: relative;
   display: inline-block;
+  background-color: mediumorchid;
+  font-family: sans-serif;
+}
+.modal-restaurante img{
+  width: 400px;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-restaurante h3{
+  text-align: center;
 }
 
 .modal-piscina{
+  top: 0;
+}
+.modal-piscina img{
   border: red 3px solid;
   position: relative;
   display: inline-block;
-} */
+  width: 350px;
+  margin: 50px 15px 300px;
+}
+.modal-piscina h3{
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* .modal_mask{
   position:fixed;
