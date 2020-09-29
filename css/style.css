@@ -1,25 +1,24 @@
 body{
+  margin: 0;
+  padding: 0;
   font-family: impact;
   font-size: 18px;
   line-height: 1.5;
-  margin: 0;
-  padding: 0;
 }
 *{
   box-sizing: border-box;
 }
 header{
+  width: 1500vh;
+  height: 615px;
+  margin: 0px auto;
   background-image: url("../img/entrada.jpg");
   /* background-image: linear-gradient(to bottom, rgb(255, 255, 255, 0.3) 10%, rgb(255, 255, 255, 0) 20%), */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  display: block; 
   background-attachment: fixed; 
-  margin: 0px auto;
   max-width: 100%;
-  height: 615px;
-  width: 1500vh;
 }
 
 img{
@@ -30,26 +29,26 @@ a{
   color: #baa1e9;
 }
 
-/* .clearfix::after{
+.clearfix::after{
   clear: both;
   content: '';
   display: table;
-} */
-/* .mt-15{
+}
+.mt-15{
   margin-top: 15px;
-} */
-/* .mt-10{
+}
+.mt-10{
   margin-top: 10px;
-} */
-/* .mt-15{
+}
+.mt-15{
   margin-bottom: 15px;
-} */
-/* .mb-15{
+}
+.mb-15{
   margin-bottom: 15px;
-} */
-/* .mb-30{
+}
+.mb-30{
   margin-bottom: 30px;
-} */
+}
 .center-block{
   display: block;
   margin-left: auto;
@@ -177,56 +176,56 @@ a{
 
 .btn{
   text-transform: uppercase;
-  font-weight: 900;
   text-decoration: none;
   color: darkmagenta;
+  font-weight: 900;
 }
 
 .btn-section{
-  padding: 6px 15px;
   margin: 0px ;
+  padding: 6px 15px;  
   border-radius: 6px;
-  text-transform: none;
-  font-family: sans-serif;
   background: #3b7861;
-  color: #F2F2F2;
+  text-transform: none;
+  font-family: sans-serif; 
   font-weight: 500;
-  font-size: 13px;
+  font-size: 13px; 
+  color: #F2F2F2;  
 }
 
 .btn-terminos{ 
-  margin: 60px 530px 35px; 
   display: inline-block;
+  width: auto;
+  margin: 60px 530px 35px; 
   padding: 3px 20px;
-  border-radius: 4px;
   border: 2px solid #0a6d6e;
-  color: #000;
+  border-radius: 4px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
-  text-transform: none;
   font-size: 14px;
+  color: #000;
+  text-transform: none;  
   text-align: center; 
-  width: auto;
 }
 
 .btn-bajar-menu{
-  margin-top: 80px;
-  width: 20%; 
+  width: 20%;
+  margin-top: 80px;   
   padding: 3px 20px;
-  border-radius: 4px;
   border: 2px solid #0a6d6e;
-  color: #000;
+  border-radius: 4px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
-  text-transform: none;
+  color: #000;
   font-size: 14px;
+  text-transform: none;  
   text-align: center; 
 }
 
 .container{
-  width: 1200px;  
   position: relative;
   display: block;
+  width: 1200px;    
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -235,42 +234,42 @@ a{
 }
 
 .form-header{
-  z-index: 650;
-  padding: 20px 10px 20px 60px;
-  background-color: rgb(0, 128, 128, 2);
-  display: block;
   position: relative;
-  margin-left: auto;
-  margin-right: auto; 
+  display: block;
   width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 10px 20px 60px; 
   top: 547px;
+  z-index: 650;  
+  background-color: rgb(0, 128, 128, 2);
   max-width: 100%;
 }
 
 .navbar{
   position: fixed;
-  z-index: 700;
-  margin: auto;
   width: 100%;
-  background-color: rgb(181, 212, 210);
   height: 100px;
+  margin: auto;
+  z-index: 700;  
+  background-color: rgb(181, 212, 210);  
   box-shadow: 0px 8px 10px -10px;
 }
-  .navbar-brand {
-    margin: 0px;
-    border-radius: 0px 0px 3px 3px;
-    height: auto;
+  .navbar-brand{
     width: 80%;
+    height: auto;
+    margin: 0px;
+    border-radius: 0px 0px 3px 3px;    
   }
-  .navbar-brand img {
+  .navbar-brand img{
     width:200px;
     margin: 10px 0px 0px;
   }
   .navbar-menu{
-    top: 25px;
-    list-style: none;
     margin: 0;
     padding: 0;
+    top: 25px;
+    list-style: none;    
   }
   .menu-item{
     position: relative;
@@ -278,39 +277,66 @@ a{
   }
   .menu-link{
     display: inline-block;
+    margin: 30px 10px 0px 0px;
     padding: 10px 10px;
-    margin: 30px 10px 50px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
     text-decoration: none;
     /* color: rgb(213, 213, 213); */
     color: #5C7370;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    /* text-shadow: 1px 2px 2px; */
   }
   .menu-link:hover{
     background-color:#374c4c; 
-    color: rgb(255, 255, 255);
     border-radius: 5px 5px 5px 5px;
+    color: rgb(255, 255, 255); 
   }
 
+  
+.idioma{
+  position:relative;
+  padding: 5px 10px;
+  top:20px;
+  left: 20px;
+  /* background-color: rgba(183, 206, 205, 0.3); */
+  background-color: rgba(130, 149, 148, 0.3);  
+  border-radius: 3%;
+}
+  .idioma:hover{
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 3%;
+  }
+
+.btn-wsp{
+  position: fixed;
+  width: 75px;
+  right: 0;
+  bottom: 25px;  
+  z-index: 600;  
+  border-radius: 5px 0px 0px 5px;
+  background-color: #e2f4fd;
+  box-shadow: 10px 5px 8px -3px;
+}
+
+
 .form-header{
-  z-index: 650;
-  padding: 15px 10px 20px 10px;
-  display: block;
   position: relative;
+  display: block;
+  width: 1000px;  
   margin-left: auto;
   margin-right: auto; 
-  width: 1000px;
+  padding: 15px 10px 20px 10px;
   top: 551px;
-  max-width: 100%;
   border-radius: 4px 4px 0px 0px;
   background-color: #143737;
+  z-index: 650;  
+  max-width: 100%;  
 }
 .form-header input{
+  margin: 0px 20px 0px 5px;
   font-family: sans-serif;
   font-size: 14px;
   font-weight: 500;
-  margin: 0px 20px 0px 5px;
+  
 }
 .input{
   width: 25%;
@@ -329,65 +355,50 @@ a{
   ;
 }
 .btn-in{
-  background-color: rgb(224, 224, 224);
-  padding: 3px 15px;
   margin: 0px;
+  padding: 3px 15px;
+  background-color: rgb(224, 224, 224);  
   border-radius: 3px;
 }
 
-.idioma{
-  position:relative;
-  top:20px;
-  left: 20px;
-  /* background-color: rgba(183, 206, 205, 0.3); */
-  background-color: rgba(130, 149, 148, 0.3);
-  padding: 5px 10px;
-  border-radius: 3%;
-  }
-  .idioma:hover{
-    border: 1px solid rgb(160, 160, 160);
-    border-radius: 3%;
-  }
-
 .section{
-  width: 100%;
   position: relative;
+  width: 100%;  
   float: left;
 }
 .section-titulo{
   margin:30px 0px 50px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;  
   font-size: 20px;
   font-weight: 600;
+  text-align: center;
   text-transform: uppercase;
 }
 
   .section-bienvenida{
-    top: 0;
     margin: 20px 0px 40px;
+    top: 0;   
   }
   .section-bienvenida img{
     width:50%;
     margin: 40px 40px;
-
   }
   .section-bienvenida h2{
-    margin: 35px 0px 10px;
     display: inline-block;
+    margin: 35px 0px 10px;    
     font-family: sans-serif;
     font-size: 20px;
     font-weight: 600;
   }
   .section-bienvenida p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
     width: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;    
   }
 
   .section-hab{
-    background-color: rgb(221, 221, 221);
     height: 450px;
+    background-color: rgb(221, 221, 221);    
   } 
   .section-hab img{
     width: auto;
@@ -413,9 +424,9 @@ a{
   padding: 30px 0px 30px;
 }
 .section-promo article{
-  margin-bottom: 10px; 
   position: relative;
   display: inline-block;
+  margin-bottom: 10px;   
 }
   .section-promo article h3{
     margin: 50px 0px 10px;
@@ -427,10 +438,10 @@ a{
     box-shadow: 0px 12px 10px -10px;
   }
   .section-promo article p{
+    width: 90%;
     margin: 15px 0px 25px;
     font-family: Arial, Helvetica, sans-serif; 
-    font-size: 15px;
-    width: 90%;
+    font-size: 15px;    
   }
 
   .opinion-clientes{
@@ -441,43 +452,44 @@ a{
       display: block;
       position: relative;
       height: 350px;
-      margin: 0px 0px 0px;
     }
     .section-serv h5{
+      display: inline-block;
+      position: absolute;       
+      margin: 8px 0px;
+      padding: 3px 10px;
       font-family: Arial, Helvetica, sans-serif, sans-serif;
       font-size: 14px;
-      position: absolute; 
-      display: inline-block;
-      margin: 10px 0px;
+     
     }
     .section-serv img{
-      margin: 10px 20px 0px;
+      margin: 10px 0px 0px;
     }
 
   .fondo{
-    max-width: 100%;
-    position: relative;
     display: inline-block;
+    position: relative;
+    max-width: 100%;    
   }
 
   .btn-especial{
-    background-color: rgb(65, 135, 148);
     margin: 0px 20px 0px;
+    background-color: rgb(65, 135, 148);    
   }
     .bg-restaurante{
-      background: #d6d6d6 url("../img/f3.jpg") no-repeat center center fixed; 
-      background-size: cover;
       height: 400px;
+      background: #d6d6d6 url("../img/f3.jpg") no-repeat center center fixed; 
+      background-size: cover;      
     }
     
-    .caja-restaurante{      
-      margin: 50px 0px 20px 25px;
-      text-align: right; 
+    .caja-restaurante{  
       width: 50%;
-      height: 286px ;
+      height: 286px;    
+      margin: 50px 0px 20px 25px;
       float: right;
-      background-color: rgb(255, 255, 255, .9);
+      background-color: rgb(255, 255, 255, 0.9);
       box-shadow: 0px 25px 20px -20px;
+      text-align: right;       
     }
     .caja-restaurante h3{
       margin: 50px 20px 0px;
@@ -491,35 +503,34 @@ a{
     }
   
     .bg-piscina{
-      background: #d6d6d6 url("../img/pool--v11426801.jpg") no-repeat center center fixed; 
-      background-size: cover;
       width: 100%;
       height: 400px;
+      background: #d6d6d6 url("../img/pool--v11426801.jpg") no-repeat center center fixed; 
+      background-size: cover;      
     }
-    .caja-piscina{      
-      margin: 50px 10px 20px 0px;
+    .caja-piscina{            
       width: 50%;
-      background-color: rgb(255, 255, 255, .9);
       height: 286px;
+      margin: 50px 10px 20px 0px;
+      background-color: rgb(255, 255, 255, 0.9);     
       box-shadow: 0px 25px 20px -20px;
     }
     .caja-piscina h3{
-      margin: 50px 20px 20px 25px;
-      font-family: Arial, Helvetica, sans-serif;
       display: inline-block;
+      margin: 50px 20px 20px 25px;
+      font-family: Arial, Helvetica, sans-serif;      
     }
     .caja-piscina p{
-      margin: 0px 20px 20px;
-      margin-left: 25px;
+      margin: 0px 20px 20px 25px;
       font-family: Arial, Helvetica, sans-serif;
       text-align: left;
     }
 
 .footer{
-  background-color: #0D7369;
   height: 420px;
   margin-bottom: 0px;
   padding: 40px 0px;
+  background-color: #0D7369;  
 }
   .mapa{
     width: 100%;
@@ -528,20 +539,20 @@ a{
 
   .contacto{
     padding: 5px 0px;
-    text-align: center;
-    font-family: sans-serif;      
+    font-family: sans-serif; 
+    text-align: center;         
   }
   .contacto-border{
-    border-right: 1px solid #999999;
-    border-left: 1px solid #999999;
     height: 350px;
     padding: 0px 5px;
+    border-right: 1px solid #999999;
+    border-left: 1px solid #999999;    
   }
   .contacto a{
-    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 17px;
+    color: #ffffff;    
   }
 
   .form{
@@ -549,44 +560,44 @@ a{
     height: 100%;
   }
   .form form input{
-    margin: 0px 0px;
-    padding: 5px 0px 7px 10px;
     display: block;
-    float: right;
     width: 100%; 
+    margin: 0px 0px;
+    padding: 5px 0px 7px 10px;    
+    float: right;    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
   }
   .form form textarea{
-    font-family: sans-serif;
-    font-weight: 500;
     width: 100%;
+    height: 220px;
     margin: 5px 0px;
     padding-left: 10px;
-    height: 220px;
+    font-family: sans-serif;
+    font-weight: 500;    
   }
 
  .subfooter{
-  font-family: sans-serif;
-  background-color: #0D7369;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  width: 100%;  
   display: inline-block;
+  width: 100%; 
+  background-color: #0D7369;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;  
 }
 
 .titulo-modal{
-  text-transform: uppercase;
-  font-weight: 500;
-  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;  
+  text-align: center;  
 }
 
 .modal-hab{
-  font-family: sans-serif;
-  width: 80%;
   display: inline-block;
+  width: 80%;
   padding: 10px 15px 50px;
+  font-family: sans-serif;  
 }
 .modal-hab img{
   width: 30%;
@@ -601,8 +612,8 @@ a{
 
 
 .modal-hab p{
-  font-family: Arial, Helvetica, sans-serif;
   padding: 0px 30px;
+  font-family: Arial, Helvetica, sans-serif;  
   text-align: justify;
 }
 .modal-hab ul li{
@@ -613,79 +624,93 @@ a{
   text-align: center;
 }
 .modal-hab h5{
-  font-size: 18px;
-  margin: 25px 30px 0px;
-  display: inline-block;
   position: relative;
+  display: inline-block;  
+  margin: 25px 30px 0px;
+  font-size: 18px;  
   font-weight: 600;
 }
 .modal-hab h6{
-  font-size: 17px;
-  font-weight: 600;
-  display: block;
   position: relative;
+  display: block;
   margin: 18px 80px 0px;
+  font-size: 17px;
+  font-weight: 600; 
 }
 
 .modal-restaurante{
-  width: 80%;
   position: relative;
   display: inline-block;
-  font-family: sans-serif;
+  width: 80%;
   padding: 10px 0px 50px;
+  font-family: sans-serif;  
 }
 .modal-restaurante img{
-  width: 80%;
-  margin: 30px 0px 0px;
   display: block;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+  margin: 30px 0px 0px;  
 }
 .modal-restaurante p{
-  font-family: Arial, Helvetica, sans-serif;
   padding: 0px 10px 10px;
+  font-family: Arial, Helvetica, sans-serif;  
 }
 .modal-restaurante h4{
-  font-size: 17px;
   position: relative;
   margin: 10px 10px 10px;
+  font-size: 17px;  
 }
 .modal-restaurante h5{
-  font-size: 16px;
-  margin: 5px 25px 5px;
-  display: inline-block;
   position: relative;
+  display: inline-block;
+  margin: 5px 25px 5px;
+  font-size: 16px;  
   font-weight: 400;
 }
 
 
+
+
+
+
+
+
+
 .modal-piscina{
-  top: 0;
-  display: inline-block;
   position: relative;
+  display: inline-block;
   width: 80%;
+  top: 0;
 }
 .modal-piscina img{
   width: 30%;
   margin: 10px 10px 60px 10px;
 }
+.modal-piscina img:hover{
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: transform .5s;
+}
 
 
 .modal-terminos{
   display: inline-block;
-  font-family: sans-serif;
   width: 80%;
+  font-family: sans-serif;
+  
 }
 .modal-terminos p{
-  font-family: Arial, Helvetica, sans-serif;
   padding: 0px 30px;
+  font-family: Arial, Helvetica, sans-serif;  
 }
 .modal-terminos ul li{
   margin: 5px 0px ;
   list-style: none;
 }
 .modal-terminos h5{
-  font-size: 18px;
   margin: 15px 30px 0px;
+  font-size: 18px;  
   font-weight: 600;
 }
