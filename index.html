@@ -37,22 +37,27 @@
           </ul>
         </div>
 
-        <!-- Idiomas -->
-
+        
         <div class="row">
           
           <div class="col-2">
+
+            <!-- Idiomas -->
             <a href="en/index.html" class="idioma">
               <img src="img/eeuu.png" alt="">
             </a>
+
+            <!-- Redes Sociales -->
             <ul class="navbar-redes">
-              <li class="menu-item"><a href="https://www.facebook.com" ><img src="img/social_facebook.png" class="menu-redes" alt=""></a></li>
-              <li class="menu-item"><a href="https://www.instagram.com" ><img src="img/social_instagram.png" class="menu-redes" alt=""></a></li>
+              <li class="menu-item"><a href="https://www.facebook.com" target="_blank"><img src="img/social_facebook.png" class="menu-redes" alt=""></a></li>
+              <li class="menu-item"><a href="https://www.instagram.com" target="_blank"><img src="img/social_instagram.png" class="menu-redes" alt=""></a></li>
             </ul>
         </div>  
       </div>    <!-- /.row -->
     </div>  <!-- /.container -->
   </nav>  <!-- /.nav -->
+
+  <!-- BTN wsp -->
   <div>
     <a href="#" class="btn btn-wsp">
       <img src="img/wsp.png"  alt="">
@@ -67,7 +72,7 @@
 
     <form action="procesar-info-php" method="post" class="form-header">
       <!-- <label for="">Nombre y Apellido</label> -->
-      <input type="text" name="nombre" placeholder="Nombre y Apellido" required class="input">
+      <input type="text" name="nombre" placeholder="Nombre y Apellido" required class="input-form-header">
       <label for="check-in">check-in</label>
       <input type="date" id="check-in" name="check-in">
       <label for="check-out">check-out</label>
@@ -80,7 +85,7 @@
       </select>
 
       <!-- Botón Enviar -->
-      <input type="submit" value="Enviar" class="btn-in">
+      <input type="submit" value="Enviar" class="input-enviar">
     </form>
   </header>  
 
@@ -120,21 +125,35 @@
         <!-- IMG Habitación Standard -->
         <div class="row">
           <div class="col-3">              
-            <img src="img/habitaciones/249-standard-room--v11426878.jpg" alt="">
+            <img src="img/habitaciones/249-standard-room--v11426878.jpg" class="img-hab" alt="">          
           </div> 
 
           <!-- INFO Habitación Standard -->
           <article>
             <div class="col-3">  
-
               <h3>Standard</h3>
+
+              <!-- Estrellas Habitación Standard -->
+              <div class="estrellas">
+                <a href="#/" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                <a href="#/" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                <a href="#/" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                <a href="#/" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                <a href="#/" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+              </div>            
+
+              <!-- Íconos Habitación Standard -->
               <div>
                 <img src="img/iconos/icon-cajaf.png"  class="iconos" alt="">
                 <img src="img/iconos/icon-frigo.png"  class="iconos" alt="">
                 <img src="img/iconos/icon-aire.png" class="iconos" alt="">
               </div>
+
+              <!-- Info Habitación Standard -->
               <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable...</p>
-              <a href="#/" class="btn btn-section">Ver Más</a>           
+
+              <!-- Botón Ver Más -->
+              <a href="#habitacion-standard" class="btn btn-section">Ver Más</a>           
             </div>
           </article>
 
@@ -146,15 +165,29 @@
           <!-- INFO Habitación Ejecutiva -->
           <article>
             <div class="col-3">
-
               <h3>Ejecutiva</h3>
+
+              <!-- Estrellas Habitación Ejecutiva -->
+              <div class="estrellas">
+                <a href="#/" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                <a href="#/" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                <a href="#/" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                <a href="#/" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                <a href="#/" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+              </div> 
+
+              <!-- Íconos Habitación Ejecutiva -->
               <div>
                 <img src="img/iconos/icon-cajaf.png"  class="iconos" alt="">
                 <img src="img/iconos/icon-frigo.png" class="iconos" alt="">
                 <img src="img/iconos/icon-aire.png" class="iconos" alt="">
               </div>
+
+              <!-- Info Habitación Ejecutiva -->
               <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable...</p>
-              <a href="#/" class="btn btn-section">Ver más</a>             
+
+              <!-- Botón Ver Más -->
+              <a href="#habitacion-ejecutiva" class="btn btn-section">Ver más</a>             
             </div>
           </article>
         </div>  <!-- /.row -->
@@ -163,7 +196,7 @@
         <div class="row">
           <div class="col-12">
 
-            <a href="#/" class="btn btn-terminos">Términos</a>
+            <a href="#terminos" class="btn btn-terminos">Términos</a>
           </div>
         </div>  <!-- /.row -->
       </div>  <!-- /.container -->
@@ -352,40 +385,38 @@
     </section>
         
     <!-- SECTION Restaurante =======================================-->
-    <section id="restaurante" class="">
-      <div class="container">
-        
-        <div class="fondo bg-restaurante">
-          <div class="row">
-    
-            <div class="col-12">
-              <div class="caja-restaurante">
-                <h3>Los Girasoles</h3>
-                <p>Nuestro restaurante Los Girasoles Restó ofrece un ambiente distendido y ameno para disfrutar durante un viaje de negocios, en familia o con amigos una cocina simple que combina sabores y aromas de Mendoza.</p>
-                <a href="#/" class="btn btn-section btn-especial">Ver más</a>
-              </div>
-            </div>
-          </div>  <!-- /.row -->
-        </div>
-      </div> <!-- /.container -->
-    </section>
-    
-    <!-- SECTION Piscina ===========================================-->
-    <section id="piscina" class="">
+    <section id="restaurante" class="section-restaurante center-block">
       <div class="container">
 
-          <div class="fondo bg-piscina">
+        <div class="row">
+    
+          <div class="col-12">
+            <div class="caja-restaurante">
+              <h3>Los Girasoles</h3>
+              <p>Nuestro restaurante Los Girasoles Restó ofrece un ambiente distendido y ameno para disfrutar durante un viaje de negocios, en familia o con amigos una cocina simple que combina sabores y aromas de Mendoza.</p>
+              <a href="#restaurante-info" class="btn btn-section btn-especial">Ver más</a>
+            </div>            
+          </div>  <!-- /.row -->
+        </div>
+      </div> 
+    </section>   <!-- /.container -->
+    
+    <!-- SECTION Piscina ===========================================-->
+    <section id="piscina" class="fondo section-piscina center-block">
+      <div class="container">
+
+          <!-- <div class=""> -->
             <div class="row">
 
               <div class="col-12">
                 <div class="caja-piscina">
                   <h3>Piscina</h3>
                   <p>Argentino Hotel cuenta con un sector de piscina donde podrá relajarse y disfrutar del sol mendocino. Habilitada de Noviembre a Febrero.</p>
-                  <a href="#/" class="btn btn-section btn-especial">Ver más</a>
+                  <a href="#piscina_img" class="btn btn-section btn-especial">Ver más</a>
                 </div>
               </div>                
             </div> <!-- /.row -->
-          </div>
+          <!-- </div> -->
         </div>  <!-- /.row -->
       </div> <!-- /.container -->
     </section>
@@ -430,7 +461,7 @@
                   <textarea name="Comentario" id="Comentario" cols="30" rows="10">Ingrese Comentario...</textarea>
 
                   <!-- Caja Bottom -->
-                  <input type="submit" value="Enviar mensaje">
+                  <input type="submit" value="Enviar mensaje" class="input-enviar">
                 </form>
               </div>
             </div>
@@ -455,259 +486,274 @@
 
 
   <!-- VENTANAS MODALES
-  ========================================================= -->
+  =========================================================
+=========================================================== -->
 
   <!-- Habitación Standard 
   ======================== -->
-  <div  id="habitacion-standard" class="modal-hab">
+  <div  id="habitacion-standard" class="modal-mask">    
     <div class="container">
+      <div class="modal-hab center-block">
 
-      <!-- <a href="#/" class="cerrar">cerrar</a> -->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="titulo-modal">Habitación Standard</h3>
-        </div>
-      </div>  <!-- /.row -->  
+        <div class="row">
+          <div class="col-12">
+            <h3 class="titulo-modal">Habitación Standard</h3>
+            <a href="#" class="cerrar">cerrar</a>
+          </div>
+        </div>  <!-- /.row -->  
 
-      <!-- IMGS de Ventana Modal Habitación Standard -->
-      <div class="row">
-        <div class="col-12">
-          <img src="img/habitaciones/249-standard-room--v11426878.jpg"  alt="">
+        <!-- IMGS de Ventana Modal Habitación Standard -->
+        <div class="row">
+          <div class="col-12">
+            <div class="img-hab">
+              <img src="img/habitaciones/249-standard-room--v11426878.jpg"  alt="">
 
-          <img src="img/habitaciones/249-standard-room--v11426823.jpg"  alt="">
-      
-          <img src="img/habitaciones/249-standard-room--v11426807.jpg"  alt="">
-        </div>
-      </div>  <!-- /.row -->
+              <img src="img/habitaciones/249-standard-room--v11426823.jpg"  alt="">
+          
+              <img src="img/habitaciones/249-standard-room--v11426807.jpg"  alt="">
+            </div>
+          </div>
+        </div>  <!-- /.row -->
 
-      <!-- INFO de Ventana Modal Habitación Standard -->
-      <div class="row">
-        <div class="col-12">
-          <h4>Desde $3689 ARS Final por noche</h4>
-          <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable, Room Service, Wi Fi sin cargo adicional, climatización individual, camas sommier, amenities, servicios DDI y DDN.</p>
-        </div>
-      </div>   <!-- /.row -->
+        <!-- INFO de Ventana Modal Habitación Standard -->
+        <div class="row">
+          <div class="col-12">
+            <h4 class="subtitulo-modal">Desde $3689 ARS Final por noche</h4>
+            <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable, Room Service, Wi Fi sin cargo adicional, climatización individual, camas sommier, amenities, servicios DDI y DDN.</p>
+          </div>
+        </div>   <!-- /.row -->
 
-      <div class="row">
+        <div class="row">
 
-        <div class="col-6">
-          <h5>Servicios</h5>
-          <ul>
-            <li>Aire Acondicionado</li>
-            <li>Caja Fuerte</li>
-            <li>Minibar</li>
-            <li>Ducha</li>
-            <li>Toallas</li>
-            <li>Teléfono</li>
-            <li>LCD</li>
-            <li>Internet sin cargo adicional (WiFi)</li>
-            <li>Prohibido fumar en las habitaciones </li>
-          </ul>
-        </div>
+          <div class="col-6">
+            <h5>Servicios</h5>
+            <ul>
+              <li>Aire Acondicionado</li>
+              <li>Caja Fuerte</li>
+              <li>Minibar</li>
+              <li>Ducha</li>
+              <li>Toallas</li>
+              <li>Teléfono</li>
+              <li>LCD</li>
+              <li>Internet sin cargo adicional (WiFi)</li>
+              <li>Prohibido fumar en las habitaciones </li>
+            </ul>
+          </div>
 
-        <div class="col-6">
-          <h6>Entrada: 03:00 p.m.</h6>
-          <h6>Salida: 11:00 a.m.</h6>
-        </div>
-      </div>    <!-- /.row -->
-    </div>   <!-- /.container -->
+          <div class="col-6">
+            <h6>Entrada: 03:00 p.m.</h6>
+            <h6>Salida: 11:00 a.m.</h6>
+          </div>
+        </div>    <!-- /.row -->
+      </div>
+    </div>   <!-- /.container -->    
   </div>
-
-
+ 
   <!-- Habitación Ejecutiva 
   ========================= -->
-
-  <div  id="habitacion-ejecutiva" class="modal-hab">
+  <div  id="habitacion-ejecutiva" class="modal-mask">
     <div class="container">
+      <div class="modal-hab center-block">
     
-      <div class="row">
-        <div class="col-12">
-          <h3 class="titulo-modal">Habitación Ejecutiva</h3>
-        </div>
-      </div>   <!-- /.row -->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="titulo-modal">Habitación Ejecutiva</h3>
+            <a href="#" class="cerrar">cerrar</a>
+          </div>
+        </div>   <!-- /.row -->
 
-      <!-- IMGS de Ventana Modal Habitación Ejecutiva -->
-      <div class="row">
-        <div class="col-12">
-          <img src="img/habitaciones/338-executive-room--v11426729.jpg"  alt="">
+        <!-- IMGS de Ventana Modal Habitación Ejecutiva -->
+        <div class="row">
+          <div class="col-12">
+            <img src="img/habitaciones/338-executive-room--v11426729.jpg"  alt="">
+          
+            <img src="img/habitaciones/338-executive-room--v11426819.jpg"  alt="">
         
-          <img src="img/habitaciones/338-executive-room--v11426819.jpg"  alt="">
-      
-          <img src="img/habitaciones/338-executive-room--v11426830.jpg"  alt="">
-        </div>
-      </div>   <!-- /.row -->
+            <img src="img/habitaciones/338-executive-room--v11426830.jpg"  alt="">
+            
+          </div>
+        </div>   <!-- /.row -->
 
-      <!-- INFO de Ventana Modal Habitación Ejecutiva -->
-      <div class="row">
-        <div class="col-12">            
-          <h4>Desde $4199 ARS Final por noche</h4>
-          <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable, Wi Fi sin cargo adicional, climatización individual, camas sommier, servicios DDI y DDN. Las habitaciones ejecutivas además cuentan con secador de pelo empotrado, amenities especiales y room service sin cargo. Habitaciones con vista a la Plaza Independencia, bañera y balcón sujeto a disponibilidad.</p>
-        </div>
-      </div>   <!-- /.row -->
+        <!-- INFO de Ventana Modal Habitación Ejecutiva -->
+        <div class="row">
+          <div class="col-12">            
+            <h4 class="subtitulo-modal">Desde $4199 ARS Final por noche</h4>
+            <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable, Wi Fi sin cargo adicional, climatización individual, camas sommier, servicios DDI y DDN. Las habitaciones ejecutivas además cuentan con secador de pelo empotrado, amenities especiales y room service sin cargo. Habitaciones con vista a la Plaza Independencia, bañera y balcón sujeto a disponibilidad.</p>
+          </div>
+        </div>   <!-- /.row -->
 
-      <div class="row">
-        <div class="col-6">
-          <h5>Servicios</h5>
-          <ul>
-            <li>Aire Acondicionado</li>
-            <li>Caja Fuerte</li>
-            <li>Minibar</li>
-            <li>Ducha</li>
-            <li>Toallas</li>
-            <li>Teléfono</li>
-            <li>LCD</li>
-            <li>Internet sin cargo adicional (WiFi)</li>
-            <li>Prohibido fumar en las habitaciones </li>
-          </ul>
-        </div>
-      </div>  <!-- /.row -->
+        <div class="row">
+          <div class="col-6">
+            <h5>Servicios</h5>
+            <ul>
+              <li>Aire Acondicionado</li>
+              <li>Caja Fuerte</li>
+              <li>Minibar</li>
+              <li>Ducha</li>
+              <li>Toallas</li>
+              <li>Teléfono</li>
+              <li>LCD</li>
+              <li>Internet sin cargo adicional (WiFi)</li>
+              <li>Prohibido fumar en las habitaciones </li>
+            </ul>
+          </div>
+        </div>  <!-- /.row -->
 
-      <div class="row">
-        <div class="col-6">
-          <h6>Entrada: 03:00 p.m.</h6>
-          <h6>Salida: 11:00 a.m.</h6>
-        </div>
-      </div>    <!--/.row -->
+        <div class="row">
+          <div class="col-6">
+            <h6>Entrada: 03:00 p.m.</h6>
+            <h6>Salida: 11:00 a.m.</h6>
+          </div>
+        </div>    <!--/.row -->
+      </div>
     </div>   <!-- /.container -->
   </div>  
  
 
   <!-- Restaurante  -->
-  <div id="restaurante_info" class="modal-restaurante">
+  <div id="restaurante-info" class="modal-mask">
     <div class="container">
+      <div class="modal-restaurante center-block">
 
-      <!-- <a href="#/" class="cerrar">cerrar</a> -->
-      <div class="row">
-        <div class="col-12">
-          <h3 class="titulo-modal">Restaurante Los Girasoles</h3>
-        </div>
-      </div>   <!-- /.row -->
-
-      <!-- INFO de Venta Modal Restaurante -->
-      <div class="row">
-        <div class="col-8">
-          <p>Los Girasoles Restó ofrece un ambiente distendido y ameno para disfrutar durante un viaje de negocios, en familia o con amigos una cocina simple que combina sabores y aromas de Mendoza.</p>
-           
-          <h4>Días y Horarios</h4>  
-          <h5>Lunes a Domingos de 6:30 hs a 23:30 hs</h5>  
-
-          <h4>Desayuno Buffet</h4> 
-          <h5>Lunes a Viernes de 6:30 hs a 10:30 hs</h5> 
-          <h5>Sábados, Domingos y feriados de 7:00 hs a 11:00hs</h5> 
-
-          <h4>Menú Ejecutivo</h4>  
-          <h5>De Lunes a Viernes sólo almuerzos.</h5> 
-          <h5>Dos opciones de plato principal a elección + Dos opciones de postre a elección + Copa de vino o bebida sin alcohol + Servicio de cafetería.</h5> 
-
-          <h4>Almuerzos y Cenas</h4>  
-          <h5>Amplia carta de sabores regionales en entradas, principales y postres.</h5> 
-
-          <h4>Tarde de Té</h4>  
-          <h5>Disfrute de una tarde diferente junto a las exquisiteces de nuestra pastelería.</h5>
-          <h5> Reservas con seña - 72 hs de anticipación.</h5>  
-        </div>
-
-        <!-- IMG del Menú -->
-        <div class="col-4">
-          <div>
-            <img src="img/gastronomia/f3.jpg" alt="">
-            <img src="img/gastronomia/girasoles.jpg" alt="">
-            <img src="img/gastronomia/f4.jpg" alt="">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="titulo-modal">Restaurante Los Girasoles</h3>
+            <a href="#" class="cerrar">cerrar</a>
           </div>
-        </div>
-      </div>  <!-- /.row -->
+        </div>   <!-- /.row -->
 
-      <div class="row">
-        <div class="col-12">
-          
-          <!-- Descargar PDF Menú -->
-          <a href=#/" download="" class="btn btn-bajar-menu center-block">Descargar Menú</a>
-        </div>
-      </div> <!-- /.row -->
+        <!-- INFO de Venta Modal Restaurante -->
+        <div class="row">
+          <div class="col-8">
+            <p>Los Girasoles Restó ofrece un ambiente distendido y ameno para disfrutar durante un viaje de negocios, en familia o con amigos una cocina simple que combina sabores y aromas de Mendoza.</p>
+            
+            <h4>Días y Horarios</h4>  
+            <h5>Lunes a Domingos de 6:30 hs a 23:30 hs</h5>  
+
+            <h4>Desayuno Buffet</h4> 
+            <h5>Lunes a Viernes de 6:30 hs a 10:30 hs</h5> 
+            <h5>Sábados, Domingos y feriados de 7:00 hs a 11:00hs</h5> 
+
+            <h4>Menú Ejecutivo</h4>  
+            <h5>De Lunes a Viernes sólo almuerzos.</h5> 
+            <h5>Dos opciones de plato principal a elección + Dos opciones de postre a elección + Copa de vino o bebida sin alcohol + Servicio de cafetería.</h5> 
+
+            <h4>Almuerzos y Cenas</h4>  
+            <h5>Amplia carta de sabores regionales en entradas, principales y postres.</h5> 
+
+            <h4>Tarde de Té</h4>  
+            <h5>Disfrute de una tarde diferente junto a las exquisiteces de nuestra pastelería.</h5>
+            <h5> Reservas con seña - 72 hs de anticipación.</h5>  
+          </div>
+
+          <!-- IMG del Menú -->
+          <div class="col-4">
+            <div>
+              <img src="img/gastronomia/f3.jpg" alt="">
+              <img src="img/gastronomia/girasoles.jpg" alt="">
+              <img src="img/gastronomia/f4.jpg" alt="">
+            </div>
+          </div>
+        </div>  <!-- /.row -->
+
+        <div class="row">
+          <div class="col-12">
+            
+            <!-- Descargar PDF Menú -->
+            <a href=#/" download="" class="btn btn-bajar-menu center-block">Descargar Menú</a>
+          </div>
+        </div> <!-- /.row -->
+      </div>
     </div>  <!-- /.container -->
   </div>
  
 
   <!-- Sección Piscina 
   ==================== -->
-  <div id="piscina_img" class="modal-piscina">
+  <div id="piscina_img" class="modal-mask">
     <div class="container">
+      <div class="modal-piscina center-block">
       
-      <div class="row">
-        <div class="col-12">
-          <h3 class="titulo-modal">Sector Piscina</h3>
+        <div class="row">
+          <div class="col-12">
+            <h3 class="titulo-modal">Sector Piscina</h3>          
+          </div>
         </div>
-      </div>
 
-      <!-- IMGS de Ventana Modal Piscina -->
-      <div class="row">
-        <div class="col-12">
-          <img src="img/249-standard-room--v11426827.jpg"  alt="">
-          <img src="img/pool--v11426826.jpg"  alt="">
-          <img src="img/pool--v11426885.jpg"  alt="">
-        </div>
-      </div>   <!-- /.row -->
+        <!-- IMGS de Ventana Modal Piscina -->
+        <div class="row">
+          <div class="col-12">
+            <img src="img/249-standard-room--v11426827.jpg"  alt="">
+            <img src="img/pool--v11426826.jpg"  alt="">
+            <img src="img/pool--v11426885.jpg"  alt="">
+            <a href="#/" class="cerrar">cerrar</a>
+          </div>
+        </div>   <!-- /.row -->
+      </div>
     </div>
   </div>   <!--/.container -->
 
   <!-- Sección Términos
   ===================== -->
-  <div id="terminos" class="modal-terminos">
+  <div id="terminos" class="modal-mask">
     <div class="container">
+      <div class="modal-terminos center-block">
       
-      <div class="row">
-        <div class="col-12">
-          <h3 class="titulo-modal">Términos y Condiciones - Reservas</h3>
-        </div>
-      </div>  <!-- /.row -->
+        <div class="row">
+          <div class="col-12">
+            <h3 class="titulo-modal">Términos y Condiciones - Reservas</h3>
+            <a href="#" class="cerrar">cerrar</a>
+          </div>
+        </div>  <!-- /.row -->
 
-      <div class="row">
-        <div class="col-12">
+        <div class="row">
+          <div class="col-12">
 
-          <h5>Se requiere si o si una de las siguientes garantías:</h5>
+            <h5>Se requiere si o si una de las siguientes garantías:</h5>
 
-          <ul>
-            <li>1. Tarjeta de crédito internacional.</li>
-            <li>2. Prepago en efectivo en mostrador.</li>
-            <li>3. Depósito / Transferencia en Banco Francés.</li>
-          </ul>
+            <ul>
+              <li>1. Tarjeta de crédito internacional.</li>
+              <li>2. Prepago en efectivo en mostrador.</li>
+              <li>3. Depósito / Transferencia en Banco Francés.</li>
+            </ul>
 
-          <h5>Formas de pago</h5>
+            <h5>Formas de pago</h5>
 
-          <ul>
-            <li>- VISA, MASTERCARD, AMEX, DINERS ( en un sólo pago )</li>
-            <li>- Efectivo en pesos argentinos. </li>
-            <li>- Dólares tomados al tipo de cambio de Banco Nación. </li>
-            <li>- Transferencia bancaria o depósito. </li>
-          </ul>
+            <ul>
+              <li>- VISA, MASTERCARD, AMEX, DINERS ( en un sólo pago )</li>
+              <li>- Efectivo en pesos argentinos. </li>
+              <li>- Dólares tomados al tipo de cambio de Banco Nación. </li>
+              <li>- Transferencia bancaria o depósito. </li>
+            </ul>
 
-          <h5>Facturación</h5>
+            <h5>Facturación</h5>
 
-          <p>Facturas A: acorde a lo que exige la RG 3668 de AFIP todas las personas que requieran la discriminación de IVA en su facturación, deben presentar o en su defecto completar al check out el F8001 que oficiará como Declaración Jurada.</p>
-          <p>Facturas A: acorde a lo que exige la RG 3668 de AFIP todas las personas que requieran la discriminación de IVA en su facturación, deben presentar o en su defecto completar al check out el F8001 que oficiará como Declaración Jurada.</p>
-          <p>Facturas B: acorde a lo que exige la RG 1415 de AFIP aquellas personas cuya facturación sea igual o superior a los AR$1000 debe brindar la siguiente información: DNI/LE, dirección postal de residencia actual y teléfono.</p>
-          <p>Facturas T: acorde a lo que exige la RG 3971 y 566/2016 de AFIP se establece el Régimen de reintegro del Impuesto al Valor Agregado sobre los servicios de Alojamiento con o sin desayuno a turistas extranjeros cuya forma de pago sea Tarjeta de crédito Internacional y Agencias de Turismo Nacionales e Internacionales que reserven a turistas extranjeras y cuya forma de pago sea mediante Transferencia bancaria o Cuenta Corriente. </p>
-          
-          <h5>Políticas generales </h5>
+            <p>Facturas A: acorde a lo que exige la RG 3668 de AFIP todas las personas que requieran la discriminación de IVA en su facturación, deben presentar o en su defecto completar al check out el F8001 que oficiará como Declaración Jurada.</p>
+            <p>Facturas A: acorde a lo que exige la RG 3668 de AFIP todas las personas que requieran la discriminación de IVA en su facturación, deben presentar o en su defecto completar al check out el F8001 que oficiará como Declaración Jurada.</p>
+            <p>Facturas B: acorde a lo que exige la RG 1415 de AFIP aquellas personas cuya facturación sea igual o superior a los AR$1000 debe brindar la siguiente información: DNI/LE, dirección postal de residencia actual y teléfono.</p>
+            <p>Facturas T: acorde a lo que exige la RG 3971 y 566/2016 de AFIP se establece el Régimen de reintegro del Impuesto al Valor Agregado sobre los servicios de Alojamiento con o sin desayuno a turistas extranjeros cuya forma de pago sea Tarjeta de crédito Internacional y Agencias de Turismo Nacionales e Internacionales que reserven a turistas extranjeras y cuya forma de pago sea mediante Transferencia bancaria o Cuenta Corriente. </p>
+            
+            <h5>Políticas generales </h5>
 
-          <ul>
-            <li> Horario de check in: a partir de las 15 hrs.</li>
-            <li>Horario de check out: 11 hrs.</li>
-            <li>Early check in sujeto a disponibilidad con cargo de media tarifa.</li>
-            <li>Late check out hasta las 17 hrs, con cargo media tarifa; después de las 17 hrs. con cargo tarifa completa, sujeto a disponibilidad.</li>
-            <li>Room service: 10% de recargo sobre precios carta.</li>
-            <li>Niños menores de 2 años, no abonan tarifa.</li>
-            <li>Cunas disponibles.</li>
-          </ul>
+            <ul>
+              <li> Horario de check in: a partir de las 15 hrs.</li>
+              <li>Horario de check out: 11 hrs.</li>
+              <li>Early check in sujeto a disponibilidad con cargo de media tarifa.</li>
+              <li>Late check out hasta las 17 hrs, con cargo media tarifa; después de las 17 hrs. con cargo tarifa completa, sujeto a disponibilidad.</li>
+              <li>Room service: 10% de recargo sobre precios carta.</li>
+              <li>Niños menores de 2 años, no abonan tarifa.</li>
+              <li>Cunas disponibles.</li>
+            </ul>
 
-          <h5>Política de cancelación de reservas</h5>
+            <h5>Política de cancelación de reservas</h5>
 
-          <p>La misma es 48 hrs. anteriores a la fecha de ingreso para reservas individuales.</p> 
-          <p>En el caso de grupos será de 72hs previas al check in.</p> 
-          <p>En caso que la reserva no sea cancelada dentro del límite de tiempo estipulado se cobrará una noche de alojamiento por cada habitación reservada en concepto de No show.</p> 
-          <p>Argentino Hotel es un establecimiento “libre de humo”, por lo cual no está permitido fumar en ningún lugar interno del mismo, incluidas las habitaciones. En caso de fumar dentro de la habitación la penalidad es de una noche de alojamiento.</p>
-        </div>
-      </div>  <!-- /.row -->
+            <p>La misma es 48 hrs. anteriores a la fecha de ingreso para reservas individuales.</p> 
+            <p>En el caso de grupos será de 72hs previas al check in.</p> 
+            <p>En caso que la reserva no sea cancelada dentro del límite de tiempo estipulado se cobrará una noche de alojamiento por cada habitación reservada en concepto de No show.</p> 
+            <p>Argentino Hotel es un establecimiento “libre de humo”, por lo cual no está permitido fumar en ningún lugar interno del mismo, incluidas las habitaciones. En caso de fumar dentro de la habitación la penalidad es de una noche de alojamiento.</p>
+          </div>
+        </div>  <!-- /.row -->
+      </div>
     </div>   <!-- container -->
   </div> 
 </body>

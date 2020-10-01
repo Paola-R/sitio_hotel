@@ -96,14 +96,27 @@ a{
 .radius-50{
   border-radius: 50%;
 }
-.input{
-  width: 25%;
-}
-.iconos{
-  margin: 0px 3px;
-}
 
 
+.modal-mask{
+  position: fixed;
+  z-index: 800;
+  top: -700px;
+  right: 0;
+  bottom: 0;
+  left: 0; 
+  background-color: rgba(47, 45, 45, 0.8);
+  opacity: 0;
+  height: auto;
+  overflow-y: scroll;
+  pointer-events: none;
+  transition: all 400ms ease-in-out;  
+}
+.modal-mask:target{
+  opacity: 1;
+  top: 0px;
+  pointer-events: auto;
+}
 .container{
   position: relative;
   display: block;
@@ -191,7 +204,7 @@ a{
   width: 100%;
   height: 100px;
   margin: auto;
-  z-index: 700;  
+  z-index: 800;  
   background-color: rgb(181, 212, 210);  
   box-shadow: 0px 8px 10px -10px;
 }
@@ -208,7 +221,7 @@ a{
   .navbar-menu{
     margin: 0px 30px;
     padding: 0;
-    top: 25px;
+    /* top: 25px; */
     list-style: none;    
   }
 
@@ -228,7 +241,7 @@ a{
 }
   .menu-link{
     display: inline-block;
-    margin: 30px 5px 0px 0px;
+    margin: 30px 4px 0px 0px;
     padding: 5px 7px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -289,7 +302,8 @@ a{
   }
   .btn-bajar-menu{
     width: 20%;
-    margin-top: 80px;   
+    margin-top: 40px;  
+    margin-bottom: 30px; 
     padding: 3px 20px;
     border: 2px solid #0a6d6e;
     border-radius: 4px;
@@ -309,17 +323,39 @@ a{
     border-radius: 5px 0px 0px 5px;
     background-color: #e2f4fd;
     box-shadow: 10px 5px 8px -3px;
-  }
-  .btn-in{
-    margin: 0px;
-    padding: 3px 15px;
-    background-color: rgb(224, 224, 224);  
-    border-radius: 3px;
-  }
+  }  
   .btn-especial{
     margin: 0px 20px 0px;
     background-color: rgb(65, 135, 148);    
   } 
+
+.input-enviar{
+  margin: 0px;
+  padding: 3px 15px;
+  background-color: rgb(224, 224, 224);  
+  border-radius: 3px;
+}
+  .input-enviar:hover{
+    background-color: #a3bbfb;
+    font-weight: 500;
+    color: #000;
+  }
+.input-form-header{
+  width: 25%;
+  padding-left: 10px;
+}
+
+.estrellas{  
+  position: relative;
+  margin: 0px 0px 5px 0px;  
+}
+  .estrellas a{
+    color: rgb(74, 145, 163);
+  }
+  .estrellas a:hover{
+    color: #161d86;
+    text-shadow: 2px 2px 1px rgb(153, 153, 153);
+  }
 
 .form-header{
   position: relative;
@@ -341,7 +377,7 @@ a{
     font-weight: 500;  
   }
   .form-header select{
-    margin: 0px 25px;
+    margin: 0px 10px;
     font-family: sans-serif;
     font-size: 13px;
     font-weight: 600;
@@ -360,20 +396,36 @@ a{
   .form form input{
     display: block;
     width: 100%; 
-    margin: 3px 0px;
-    padding: 5px 0px 7px 10px;    
+    margin: 0px 0px 5px;
+    padding: 3px 0px 7px 10px;    
     float: right;    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
   }
   .form form textarea{
     width: 100%;
-    height: 220px;
-    margin: 3px 0px;
+    height: 228px;
+    margin: 3px 0px 5px;
     padding-left: 10px;
     font-family: sans-serif;
     font-weight: 500;    
   }
+
+
+.titulo-modal{
+  margin: 30px 0px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;  
+  text-align: center;  
+}
+.subtitulo-modal{
+  margin: 20px 0px 5px 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
 
 .section{
   position: relative;
@@ -381,9 +433,9 @@ a{
   float: left;
 }
   .section-titulo{
-    margin:30px 0px 50px;
+    margin:30px 0px 35px;
     font-family: Arial, Helvetica, sans-serif;  
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
@@ -420,7 +472,7 @@ a{
     box-shadow: 0px 5px 8px -6px;
   }
   .section-hab h3{
-    margin: 0px 0px 10px;
+    margin: 0px;
     font-family: Arial, sans-serif;
   }
   .section-hab p{
@@ -428,6 +480,12 @@ a{
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 15px;
   }
+  .section-hab img.iconos{
+    margin: 0px 3px;
+    border: none;
+    width: 25px;
+  }
+  
 .section-promo{
   top: 0;
   padding: 30px 0px 30px;
@@ -475,20 +533,22 @@ a{
   }
 
 .fondo{
-  display: inline-block;
+  display:block;
   position: relative;
-  max-width: 100%;    
+  max-width: 100%; 
 }
   
-.bg-restaurante{
-  height: 400px;
+.section-restaurante{
+  width: 1200px;
+  height: 410px;
+  margin-bottom: 3px;
   background: #d6d6d6 url("../img/f3.jpg") no-repeat center center fixed; 
-  background-size: cover;      
+  background-size: cover;       
 }
 .caja-restaurante{  
   width: 50%;
   height: 286px;    
-  margin: 50px 0px 20px 25px;
+  margin: 50px -15px 0px 25px;
   float: right;
   background-color: rgb(255, 255, 255, 0.9);
   box-shadow: 0px 25px 20px -20px;
@@ -505,8 +565,8 @@ a{
     font-family: Arial, Helvetica, sans-serif;
   }
   
-.bg-piscina{
-  width: 100%;
+.section-piscina{
+  width: 1200px;
   height: 400px;
   background: #d6d6d6 url("../img/pool--v11426801.jpg") no-repeat center center fixed; 
   background-size: cover;      
@@ -514,7 +574,7 @@ a{
 .caja-piscina{            
   width: 50%;
   height: 286px;
-  margin: 50px 10px 20px 0px;
+  margin: 50px 10px 20px -15px;
   background-color: rgb(255, 255, 255, 0.9);     
   box-shadow: 0px 25px 20px -20px;
 }
@@ -567,21 +627,18 @@ a{
 }
 
 
-.titulo-modal{
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;  
-  text-align: center;  
-}
 .modal-hab{
-  display: inline-block;
   width: 80%;
-  padding: 10px 15px 50px;
-  font-family: sans-serif;  
+  height: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 10px 35px 5px;
+  font-family: sans-serif; 
+  background-color: #fff;
 }
   .modal-hab img{
-    width: 30%;
-    margin: 0px 10px 0px 15px;
+    width: 20%;
+    margin-left: 80px;    
   }
   .modal-hab img:hover{
     -webkit-transform: scale(1.5);
@@ -590,72 +647,75 @@ a{
     transition: transform .5s;
   }
   .modal-hab p{
-    padding: 0px 30px;
     font-family: Arial, Helvetica, sans-serif;  
     text-align: justify;
+    font-size: 15px;    
   }
   .modal-hab ul li{
-    margin: 5px 0px ;
-  }
-  .modal-hab h4{
-    font-size: 25px;
-    text-align: center;
+    margin: 0px 0px ;
+    font-size: 14px;
   }
   .modal-hab h5{
     position: relative;
     display: inline-block;  
-    margin: 25px 30px 0px;
-    font-size: 18px;  
+    margin: 0px 30px 0px;
+    font-size: 16px;  
     font-weight: 600;
   }
   .modal-hab h6{
     position: relative;
     display: block;
-    margin: 18px 80px 0px;
-    font-size: 17px;
+    margin: 10px 80px 0px;
+    font-size: 15px;
     font-weight: 600; 
   }
 
+
 .modal-restaurante{
-  position: relative;
-  display: inline-block;
   width: 80%;
-  padding: 10px 0px 50px;
+  height: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 5px 40px 5px;
   font-family: sans-serif;  
+  background-color: #fff;
 }
   .modal-restaurante img{
     display: block;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin: 30px 0px 0px;  
+    margin: 50px 0px 0px;  
   }
   .modal-restaurante p{
     padding: 0px 10px 10px;
-    font-family: Arial, Helvetica, sans-serif;  
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 15px; 
   }
   .modal-restaurante h4{
     position: relative;
     margin: 10px 10px 10px;
-    font-size: 17px;  
+    font-size: 15px;  
   }
   .modal-restaurante h5{
     position: relative;
     display: inline-block;
     margin: 5px 25px 5px;
-    font-size: 16px;  
+    font-size: 14px;  
     font-weight: 400;
   }
 
 .modal-piscina{
-  position: relative;
-  display: inline-block;
   width: 80%;
-  top: 0;
+  height: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+  margin-top: 100px;
 }
   .modal-piscina img{
     width: 30%;
-    margin: 10px 10px 60px 10px;
+    margin: 50px 10px 60px 15px;
   }
   .modal-piscina img:hover{
     -webkit-transform: scale(1.5);
@@ -665,20 +725,26 @@ a{
   }
 
 .modal-terminos{
-  display: inline-block;
-  width: 80%;
+  width: 70%; 
+  height: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
   font-family: sans-serif;  
+  background-color: #fff;   
 }
   .modal-terminos p{
     padding: 0px 30px;
     font-family: Arial, Helvetica, sans-serif;  
+    font-size: 15px;
   }
   .modal-terminos ul li{
     margin: 5px 0px ;
     list-style: none;
+    font-size: 15px;
   }
   .modal-terminos h5{
     margin: 15px 30px 0px;
     font-size: 18px;  
     font-weight: 600;
   }
+
