@@ -18,7 +18,7 @@
 
         <!--Link Logo -->
         <div class="col-3">
-          <h1 class="navbar-brand">
+          <h1 class="nav-brand">
             <a href="index.html">
               <img src="img/logo_01.png" alt="Argentino Hotel">
             </a>
@@ -27,13 +27,13 @@
 
         <!-- Menú Principal -->
         <div class="col-7">
-          <ul class="navbar-menu">
-            <li class="menu-item"><a href="index.html" class="menu-link">Inicio</a></li>
-            <li class="menu-item"><a href="#habitaciones" class="menu-link">Habitaciones</a></li>
-            <li class="menu-item"><a href="#servicios" class="menu-link">Servicios</a></li>
-            <li class="menu-item"><a href="#restaurante" class="menu-link">Restaurante</a></li>
-            <li class="menu-item"><a href="#promociones" class="menu-link">Promociones</a></li>
-            <li class="menu-item"><a href="#contacto" class="menu-link">Contacto</a></li>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="#habitaciones" class="nav-link">Habitaciones</a></li>
+            <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+            <li class="nav-item"><a href="#restaurante" class="nav-link">Restaurante</a></li>
+            <li class="nav-item"><a href="#promociones" class="nav-link">Promociones</a></li>
+            <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
           </ul>
         </div>
 
@@ -48,9 +48,9 @@
             </a>
 
             <!-- Redes Sociales -->
-            <ul class="navbar-redes">
-              <li class="menu-item"><a href="https://www.facebook.com" target="_blank"><img src="img/social_facebook.png" class="menu-redes" alt=""></a></li>
-              <li class="menu-item"><a href="https://www.instagram.com" target="_blank"><img src="img/social_instagram.png" class="menu-redes" alt=""></a></li>
+            <ul class="nav-redes">
+              <li class="nav-item"><a href="https://www.facebook.com" target="_blank"><img src="img/social_facebook.png" class="nav-redes-link" alt=""></a></li>
+              <li class="nav-item"><a href="https://www.instagram.com" target="_blank"><img src="img/social_instagram.png" class="nav-redes-link" alt=""></a></li>
             </ul>
         </div>  
       </div>    <!-- /.row -->
@@ -59,8 +59,8 @@
 
   <!-- BTN wsp -->
   <div>
-    <a href="#" class="btn btn-wsp">
-      <img src="img/wsp.png"  alt="">
+    <a href="#/" class="btn btn-wsp">
+      <img src="img/wsp.png" alt="">
     </a>
   </div>
   
@@ -87,11 +87,12 @@
       <!-- Botón Enviar -->
       <input type="submit" value="Enviar" class="input-enviar">
     </form>
+   
   </header>  
 
   <!-- Comienza MAIN
   ==================  -->
-  <main>
+  <main>   
 
     <!-- SECTION Bienvenida =====================================-->
     <section class="section section-bienvenida">
@@ -264,12 +265,23 @@
 
     <!-- ASIDE Opinión Clientes 
     =========================== -->
-    <aside id="opinion-clientes" class="opinion-clientes">
-      <img src="https://via.placeholder.com/1500x400?text=Opinión%20Clientes" class=" center-block" alt="">
-
+    <aside id="opinion-clientes" class="section-clientes">
       <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam libero veniam. Aut, tenetur minus.</p>
-        <p>Nombre del Cliente</p>
+
+        <div class="row">
+          <div class="col-12">
+
+            <div class="section-comentarios">
+              <div class="caja-comentarios">
+                <h6>Marcelo Pérez</h6>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, molestiae psum, dolor sit amet consectetur adipisicing elit. Officiis, molestiaepsum, dolor sit amet consectetur adipisicing elit. Officiis, molestiae.</p>
+                <h6>Carla Gómez</h6>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, molestiae psum, dolor sit amet consectetur adipisicing elit. Officiis, molestiaepsum, dolor sit amet consectetur adipisicing elit. Officiis, molestiae.</p>
+              </div>
+            </div>
+            <!-- <img src="https://via.placeholder.com/1500x400?text=Opinión%20Clientes" class=" center-block" alt=""> -->
+          </div>
+        </div>
       </div>
     </aside>
 
@@ -402,7 +414,7 @@
     </section>   <!-- /.container -->
     
     <!-- SECTION Piscina ===========================================-->
-    <section id="piscina" class="fondo section-piscina center-block">
+    <section id="piscina" class="section-piscina center-block">
       <div class="container">
 
           <!-- <div class=""> -->
@@ -423,8 +435,7 @@
   </main>
   
   <!-- Comienzo FOOTER
-  ==================== -->
-  
+  ==================== -->  
   <footer  id="contacto" class="footer">  
     <div  class="container">
 
@@ -486,8 +497,7 @@
 
 
   <!-- VENTANAS MODALES
-  =========================================================
-=========================================================== -->
+  =============================================================================================================== -->
 
   <!-- Habitación Standard 
   ======================== -->
@@ -498,7 +508,7 @@
         <div class="row">
           <div class="col-12">
             <h3 class="titulo-modal">Habitación Standard</h3>
-            <a href="#" class="cerrar">cerrar</a>
+            <a href="#/" class="cerrar">cerrar</a>
           </div>
         </div>  <!-- /.row -->  
 
@@ -558,7 +568,7 @@
         <div class="row">
           <div class="col-12">
             <h3 class="titulo-modal">Habitación Ejecutiva</h3>
-            <a href="#" class="cerrar">cerrar</a>
+            <a href="#/" class="cerrar">cerrar</a>
           </div>
         </div>   <!-- /.row -->
 
@@ -618,7 +628,7 @@
         <div class="row">
           <div class="col-12">
             <h3 class="titulo-modal">Restaurante Los Girasoles</h3>
-            <a href="#" class="cerrar">cerrar</a>
+            <a href="#/" class="cerrar">cerrar</a>
           </div>
         </div>   <!-- /.row -->
 
@@ -702,7 +712,7 @@
         <div class="row">
           <div class="col-12">
             <h3 class="titulo-modal">Términos y Condiciones - Reservas</h3>
-            <a href="#" class="cerrar">cerrar</a>
+            <a href="#/" class="cerrar">cerrar</a>
           </div>
         </div>  <!-- /.row -->
 
