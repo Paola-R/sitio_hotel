@@ -2,11 +2,17 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Argentino Hotel | Mendoza</title>
+  <meta: http-equip="X-UA-Compatible" content="ie=edge"
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="theme-color" content="#ffffff">
+    <!-- [if lt IE 9]
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  [endif] -->
 </head>
 <body>  
  
@@ -27,7 +33,7 @@
 
         <!-- Menú Principal -->
         <div class="col-7">
-          <ul class="nav-menu">
+          <ul class="nav-menu clearfix">
             <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
             <li class="nav-item"><a href="#habitaciones" class="nav-link">Habitaciones</a></li>
             <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
@@ -48,7 +54,7 @@
             </a>
 
             <!-- Redes Sociales -->
-            <ul class="nav-redes">
+            <ul class="nav-redes clearfix">
               <li class="nav-item"><a href="https://www.facebook.com" target="_blank"><img src="img/social_facebook.png" class="nav-redes-link" alt=""></a></li>
               <li class="nav-item"><a href="https://www.instagram.com" target="_blank"><img src="img/social_instagram.png" class="nav-redes-link" alt=""></a></li>
             </ul>
@@ -57,16 +63,18 @@
     </div>  <!-- /.container -->
   </nav>  <!-- /.nav -->
 
-  <!-- BTN wsp -->
-  <div>
-    <a href="#/" class="btn btn-wsp">
-      <img src="img/wsp.png" alt="">
-    </a>
-  </div>
+
   
   <!-- Comienza HEADER
   ====================  -->
   <header class="header">
+
+    <!-- BTN wsp -->
+    <div>
+      <a href="#/" class="btn btn-wsp">
+        <img src="img/wsp.png" alt="">
+      </a>
+    </div>
 
     <!-- Formulario Principal -->
 
@@ -92,7 +100,7 @@
 
   <!-- Comienza MAIN
   ==================  -->
-  <main>   
+  <main class="clearfix">   
 
     <!-- SECTION Bienvenida =====================================-->
     <section class="section section-bienvenida">
@@ -154,7 +162,7 @@
               <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable...</p>
 
               <!-- Botón Ver Más -->
-              <a href="#habitacion-standard" class="btn btn-section">Ver Más</a>           
+              <a href="#habitacion-standard" class="btn btn-section-hab">Ver Más</a>           
             </div>
           </article>
 
@@ -188,7 +196,7 @@
               <p>Habitaciones con cerraduras magnéticas, minibar, TV pantalla plana, TV cable...</p>
 
               <!-- Botón Ver Más -->
-              <a href="#habitacion-ejecutiva" class="btn btn-section">Ver más</a>             
+              <a href="#habitacion-ejecutiva" class="btn btn-section-hab">Ver más</a>             
             </div>
           </article>
         </div>  <!-- /.row -->
@@ -219,13 +227,17 @@
         <article>
           <div class="row">
             <div class="col-5">
-              <img src="img/argentino-hotel5.jpg"  alt="">
+
+              <div class="box">
+                <img src="img/argentino-hotel5.jpg" class="img-box" alt="">
+                <p class="text-overlay">El lugar que buscás en el centro de la ciudad.</p>
+              </div>              
             </div>
           
             <div class="col-7">
               <h3>Momentos de a dos</h3>
-              <p>Escapadas románticas de fin de semana y con toda la tranquilidad para disfrutar de momentos especiales.</p>
-              <a href="#/" class="btn btn-section">Ver más</a>
+              <p class="texto-promo">Escapadas románticas de fin de semana y con toda la tranquilidad para disfrutar de momentos especiales.</p>
+              <a href="#/" class="btn btn-section-promo">Ver más</a>
             </div>
           </div>  <!-- /.row -->
         </article>
@@ -234,13 +246,16 @@
         <article>
           <div class="row">
             <div class="col-5">
-              <img src="img/argentino-hotel13.jpg" alt="">
+              <div class="box">
+                <img src="img/argentino-hotel13.jpg" class="img-box" alt="">
+                <p class="text-overlay">Precio especial según tiempo de alojamiento.</p>
+              </div>
             </div>
           
             <div class="col-7">
               <h3>Armonía Spa</h3>
-              <p>Ofrecemos algo más que una estadía, ofrecemos una estadía memorable y placentera.</p>
-              <a href="#/" class="btn btn-section">Ver más</a>
+              <p class="texto-promo">Ofrecemos algo más que una estadía, ofrecemos una estadía memorable y placentera.</p>
+              <a href="#/" class="btn btn-section-promo">Ver más</a>
             </div>
           </div>  <!-- row -->
         </article>
@@ -249,13 +264,16 @@
         <article>
           <div class="row">
             <div class="col-5">
-              <img src="img/street--v11426837.jpg" alt="">
+              <div class="box">
+                <img src="img/street--v11426837.jpg" class="img-box" alt="">
+                <p class="text-overlay">Aprovechá nuestras ofertas Únicas.</p>
+              </div>
             </div>
           
             <div class="col-7">
               <h3>Promo Marzo - 2021</h3>
-              <p>Tu mejor estadía para recorrer la provincia y disfrutar de sus paisajes.</p>
-              <a href="#/" class="btn btn-section">Ver más</a>
+              <p class="texto-promo">Tu mejor estadía para recorrer la provincia y disfrutar de sus paisajes.</p>
+              <a href="#/" class="btn btn-section-promo">Ver más</a>
             </div>
           </div> <!-- /.row -->
         </article>
@@ -265,24 +283,40 @@
 
     <!-- ASIDE Opinión Clientes 
     =========================== -->
-    <aside id="opinion-clientes" class="section-clientes">
+    <aside id="opinion-clientes" class="section-clientes clearfix">
       <div class="container">
+        
+        <div class="section-comentarios">
+          <div class="row">
+            <div class="col-12">
 
-        <div class="row">
-          <div class="col-12">
-
-            <div class="section-comentarios">
-              <div class="caja-comentarios">
-                <h6>Marcelo Pérez</h6>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, molestiae psum, dolor sit amet consectetur adipisicing elit. Officiis, molestiaepsum, dolor sit amet consectetur adipisicing elit. Officiis, molestiae.</p>
-                <h6>Carla Gómez</h6>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, molestiae psum, dolor sit amet consectetur adipisicing elit. Officiis, molestiaepsum, dolor sit amet consectetur adipisicing elit. Officiis, molestiae.</p>
-              </div>
+              <h5 class="subtitulo-modal">Comentarios de Nuestros Clientes</h5>
             </div>
-            <!-- <img src="https://via.placeholder.com/1500x400?text=Opinión%20Clientes" class=" center-block" alt=""> -->
+          </div>
+
+          <!-- <div class="caja-comentarios"> -->
+          <div class="row">   
+            <div class="col-12">
+              
+              <div class="caja-comentarios center-block">
+                <img src="/../img/perfil.png"  alt="">
+                <h6>Marcelo Pérez</h6>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, molestiae psum, dolor sit amet consectetur adipisicing elit. Officiis, molesti estiae psum, dolor sit amet consectetur adipisicing elit. Officiis, molestiaepsum, dolor sit amet consectetur adipisicing elit</p>
+              </div> 
+            </div>
+
+            <div class="col-12">
+
+              <div class="caja-comentarios">    
+                <img src="/../img/perfil.png" alt="">            
+                <h6>Carlos Gómez</h6>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, molestiae psum, dolor sit amet consectetur adipisicing elit. Officiis, molestiaepsum, dolor sit amet consectetur adipisicing elit. Officiis, molestiae.</p>  
+              </div>                  
+            </div>         
+            <!-- <img src="https://via.placeholder.com/1500x400?text=Opinión%20Clientes" class=" center-block" alt=""> -->            
           </div>
         </div>
-      </div>
+      </div>  <!-- /container -->
     </aside>
 
     <!-- SECTION Servicios ========================================-->
@@ -304,18 +338,18 @@
               <h5>Aire Acondicionado</h5>
             </div>
   
-            <div  class="">
+            <div  class="iconos">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Caja Fuerte</h5>
             </div>
 
-            <div class="">
+            <div class="iconos">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Ducha</h5>
             </article>
             </div>
 
-            <div class="">
+            <div class="iconos">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Teléfono</h5>
             </div>
@@ -328,18 +362,18 @@
               <h5>Minibar</h5>
             </div>
           
-            <div class="">
+            <div class="iconos">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Toallas</h5>
             </article>
             </div>
 
-            <div class="">
+            <div class="iconos">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Internet de alta velocidad gratuito (WiFi)</h5>
             </div>
 
-            <div class="">
+            <div class="iconos">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>LCD</h5>
             </div>
@@ -353,17 +387,17 @@
             </article>
             </div>
           
-            <div class="">
+            <div class="iconos">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Almacenamiento de equipaje</h5>
             </div>
 
-            <div class="">
+            <div class="iconos">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Recepción disponible las 24 horas</h5>
             </div>
 
-            <div class="">
+            <div class="iconos">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Desayuno gratis</h5>
             </div>
@@ -376,18 +410,18 @@
               <h5>Conserje</h5>
             </div>
 
-            <div class="">
+            <div class="iconos">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Servicio de planchado</h5>
             </div>
 
-            <div class="">
+            <div class="iconos">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Servicio de lavandería</h5>
             </article>
             </div>
 
-            <div class="">
+            <div class="iconos">
               <img src="img/iconos/icon-st.png" alt="">
               <h5>Restaurante</h5>
             </div>
@@ -397,7 +431,7 @@
     </section>
         
     <!-- SECTION Restaurante =======================================-->
-    <section id="restaurante" class="section-restaurante center-block">
+    <section id="restaurante" class="section-restaurante center-block clearfix">
       <div class="container">
 
         <div class="row">
@@ -405,7 +439,8 @@
           <div class="col-12">
             <div class="caja-restaurante">
               <h3>Los Girasoles</h3>
-              <p>Nuestro restaurante Los Girasoles Restó ofrece un ambiente distendido y ameno para disfrutar durante un viaje de negocios, en familia o con amigos una cocina simple que combina sabores y aromas de Mendoza.</p>
+              <p>Nuestro restaurante Los 
+                "Girasoles Restó" ofrece una cocina simple que combina sabores y aromas de Mendoza en un ambiente distendido.</p>
               <a href="#restaurante-info" class="btn btn-section btn-especial">Ver más</a>
             </div>            
           </div>  <!-- /.row -->
@@ -436,7 +471,7 @@
   
   <!-- Comienzo FOOTER
   ==================== -->  
-  <footer  id="contacto" class="footer">  
+  <footer  id="contacto" class="footer clearfix">  
     <div  class="container">
 
       <div class="row">   
@@ -504,11 +539,16 @@
   <div  id="habitacion-standard" class="modal-mask">    
     <div class="container">
       <div class="modal-hab center-block">
+        <div class="row">
+          
+          <div class="col-12">
+            <a href="#/" class="btn-cerrar">X</a>
+          </div>
+        </div>
 
         <div class="row">
-          <div class="col-12">
-            <h3 class="titulo-modal">Habitación Standard</h3>
-            <a href="#/" class="cerrar">cerrar</a>
+          <div class="col-12">            
+            <h3 class="titulo-modal">Habitación Standard</h3>            
           </div>
         </div>  <!-- /.row -->  
 
@@ -564,11 +604,16 @@
   <div  id="habitacion-ejecutiva" class="modal-mask">
     <div class="container">
       <div class="modal-hab center-block">
+
+        <div class="row">
+          <div class="col-12">
+            <a href="#/" class="btn-cerrar">X</a>
+          </div>
+        </div>
     
         <div class="row">
           <div class="col-12">
-            <h3 class="titulo-modal">Habitación Ejecutiva</h3>
-            <a href="#/" class="cerrar">cerrar</a>
+            <h3 class="titulo-modal">Habitación Ejecutiva</h3>            
           </div>
         </div>   <!-- /.row -->
 
@@ -627,8 +672,13 @@
 
         <div class="row">
           <div class="col-12">
-            <h3 class="titulo-modal">Restaurante Los Girasoles</h3>
-            <a href="#/" class="cerrar">cerrar</a>
+            <a href="#/" class="btn-cerrar">X</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <h3 class="titulo-modal">Restaurante Los Girasoles</h3>            
           </div>
         </div>   <!-- /.row -->
 
@@ -683,6 +733,12 @@
   <div id="piscina_img" class="modal-mask">
     <div class="container">
       <div class="modal-piscina center-block">
+
+        <div class="row">
+          <div class="col-12">
+            <a href="#/" class="btn-cerrar">X</a>
+          </div>
+        </div>
       
         <div class="row">
           <div class="col-12">
@@ -695,8 +751,7 @@
           <div class="col-12">
             <img src="img/249-standard-room--v11426827.jpg"  alt="">
             <img src="img/pool--v11426826.jpg"  alt="">
-            <img src="img/pool--v11426885.jpg"  alt="">
-            <a href="#/" class="cerrar">cerrar</a>
+            <img src="img/pool--v11426885.jpg"  alt="">            
           </div>
         </div>   <!-- /.row -->
       </div>
@@ -708,11 +763,16 @@
   <div id="terminos" class="modal-mask">
     <div class="container">
       <div class="modal-terminos center-block">
+
+        <div class="row">
+          <div class="col-12">
+            <a href="#/" class="btn-cerrar">X</a>
+          </div>
+        </div>
       
         <div class="row">
           <div class="col-12">
-            <h3 class="titulo-modal">Términos y Condiciones - Reservas</h3>
-            <a href="#/" class="cerrar">cerrar</a>
+            <h3 class="titulo-modal">Términos y Condiciones - Reservas</h3>            
           </div>
         </div>  <!-- /.row -->
 
@@ -766,5 +826,10 @@
       </div>
     </div>   <!-- container -->
   </div> 
+  <script>
+    $(document).ready(function(){
+      $('.bxslider'),bxSlider();
+    });
+  </script>
 </body>
 </html>
