@@ -21,7 +21,6 @@ a{
 }
 header{
   width: 1500vh;
-  /* width: 9255px; */
   /* width: 100%; */
   height: 615px;
   margin: 0px auto;
@@ -114,6 +113,7 @@ header{
 .radius-50{
   border-radius: 50%;
 }
+
 
 
 .modal-mask{
@@ -211,8 +211,8 @@ header{
   height: 100px;
   margin: auto;
   z-index: 100;  
-  /* background-color: rgb(181, 212, 210);   */
-  background-color: rgba(207, 255, 246, 0.7);
+  background-color: rgb(181, 212, 210);  
+  /* background-color: rgba(207, 255, 246, 0.7); */
   box-shadow: 0px 9px 9px -9px;
 }
  
@@ -256,7 +256,7 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     text-decoration: none;
-    color: #565c5b; 
+    color: #383d3c; 
     transition: all ease 0.5s;    
   }
     .nav-link:hover{
@@ -381,6 +381,14 @@ header{
         color:rgb(14, 14, 14); 
         border: 2px solid rgb(177, 177, 177);      
     }
+  .btn-mobile {
+    position: absolute;
+    /* z-index: 900; */
+    left: 680px;
+    font-size: 65px;
+    color: rgb(42, 103, 131);
+    display: none;
+  }
  
 .input-enviar{
   margin: 0px;
@@ -856,7 +864,7 @@ header{
 
 
 .modal-piscina{
-  width: 70%;
+  width: 80%;
   height: auto;
   margin-top: 80px;
   overflow-y: hidden;
@@ -864,8 +872,8 @@ header{
   background-color: rgb(255, 255, 255); 
 }
   .modal-piscina img{
-    width: 30%;
-    margin: 30px 10px 60px 15px;
+    width: 25%;
+    margin: 30px 10px 60px 50px;
   }
   .modal-piscina img:hover{
     -webkit-transform: scale(1.5);
@@ -908,114 +916,172 @@ header{
   header {
     background-color: var(--bg-header1);
   }
+  .nav-brand img{
+    position: absolute;      
+  }
   .form-header{
     top: 552px;
   }
   .box{
     height: 237px;
   }
+
+  .modal-hab{
+    height: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  } 
+  
+  @media screen and (max-width:1200px){
+
+    .btn-mobile{
+      display: block;
+      left: 460px;
+      max-width: 100%;
+    }
+    .nav-menu {
+      position: absolute;
+      background-color: rgb(181, 212, 210);  
+      left: 390px;
+      top: 100px;
+      opacity: 0;  
+      text-align: center;
+    }
+    .nav-item{
+      float: none;          
+    }
+    .nav-link{
+      margin: 8px 3px;      
+    }
+    .btn-mobile:hover ~ .nav-menu,
+    .nav-menu:hover{
+      opacity: 1;
+    }
+  }
 }
 
 @media screen and (max-width:992px) {
-
+ 
   header {
     background-color: var(--bg-header2);
   }
-  header{
-    height: 600px;
+
+  .nav-menu {
+    left: 235px;
+    top: 100px;
+    opacity: 0;  
   }
-  .section-bienvenida,
-  .section-hab,
-  .section-promo,
-  .section-clientes,
-  .section-serv
-  .section-restaurante,
-  .section-piscina,
-  .footer,
-  .subfooter{
-    width: 100%;
-  }
-  .btn-terminos{
-    width: 10%;
-    padding: 5px 10px;
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .btn-wsp{
-    top: 130px;
-  }
-  .subfooter{
+  .btn-mobile{
+    margin-left: -150px;
+    display: inline;
     position: absolute;
-  }  
-  .form-header{
-    top: 552px;
   }
+
+  .nav-redes{
+    width: 600px;
+    margin-left: -80px;
+  }
+
   .box{
-    height: 200px;
+    height: 197px;
   }
-  .iconos{
-    margin: 15px 0px;
+
+  .text-overlay{
+    font-size: 15px;
   }
-  .section-promo article h3 {
-    margin: 25px 0px 10px;
-  }
+
   .section-comentarios{
     height: 480px;
   }
   .caja-comentarios p{
     margin-left: 0;    
   }
-  .section-serv{
-    height: 370px;
+
+  .idioma{
+    margin: 0px 0px 0px -15px;    
   }
+
+  .iconos{
+    margin: 10px 0px;
+  }
+ 
   .contacto{
     font-size: 17px;
   }
 }
 
 @media screen and (max-width:768px) {
-
+ 
   header {
     background-color: var(--bg-header3);
   }
 
-   .form-header{
+  .nav-menu {
+    left: 85px;
+    top: 100px;
+    opacity: 0;  
+  }
+
+  .nav-brand {
+    position: absolute;
+    display: inline;
+    /* float: left; */
+    /* width: 180px;*/
+    width: 1125%;
+  }
+  
+  .idioma{
+    margin: 0px 0px 0px -15px;    
+  }
+
+  .btn-mobile{
+    margin-left: -300px;
+  }
+
+  .nav-redes{
+    width: 600px;
+    margin-left: -80px;
+  }
+
+  .form-header{
     width: auto;
     height: 80px;
     padding: 10px 15px;
-    top: 520px; 
+    top: 535px; 
   }
-    .form-header input{
-      width: 165px;
-      margin: 0px 17px 0px 9px;
-    }
-    .form-header select{
+  .form-header input{
+    width: 165px;
+    margin: 0px 17px 0px 9px;
+  }
+  .form-header select{
       width: 200px;
       margin: 15px 40px 0px 120px;
     }
-    .btn-terminos{
-      width: 15%;
-      padding: 5px 15px;
-    }
-    .box{
-      height: 149px;
-    }
-    .section-promo article h3{
-      margin: 20px 0px 10px;
-      font-family: Arial, sans-serif;
-      font-size: 15px;
+
+  .btn-terminos{ 
+    margin-left: 330px;    
+  } 
+
+  .box{
+    height: 145px;
+  }
+
+  .section-promo article h3{
+    margin: 20px 0px 10px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
     }
     .texto-promo{
       width: 90%;
       margin: 10px 0px 9px;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 15px; 
-    }
+    } 
+
     .text-overlay{
       font-size: 18px;
-    }
+     }
+
     .section-comentarios{
       height: 550px;
     }
@@ -1024,249 +1090,203 @@ header{
       position: relative;
       margin: 40px 0px 0px -70px;         
     } 
-    .caja-comentarios p{
-      width: 80%;
-      float: right;
-      font-size: 14px;      
-    } 
-
+  
+    .iconos{
+      margin: 15px 0px;
+    }
+   
     .contacto{
       font-size: 14px;
     }
     .contacto a{
       font-size: 13px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @media screen and (max-width:576px) {
-
+ 
   header {
     background-color: var(--bg-header4);
   }
+  
+  .nav-menu {
+    left: 80px;
+    top: 100px;    
+    opacity: 0;  
+  }
+  .nav-link{
+    margin: 4px 9px 4px 9px;
+    padding: 2px 7px;
+  }
+  .nav-brand {
+    position: absolute;
+    display: inline;
+    /* float: left;
+    width: 180px;       */
+  }
 
   .form-header{
-    height: 300px;
-    top: 300px;
+    height: 280px;
+    top: 340px;
   }
-    .form-header input{
-      width: 50%;
-    }
-   
-    .form-header label{
-      position: relative;
-      display: block;
-      width: 90px;
-      margin: 15px 0px 5px 10px;
-      color: lawngreen;
-    }
-    .form-header select{
-      width: 262px;
-      height: 23px;
-      margin: 20px 40px 15px 10px;
-    }
-    .input-enviar{
-     width: 15px;
-    }
+  .form-header input{
+    width: 50%;
+  }
+  .form-header label{
+    position: relative;
+    display: block;
+    width: 90px;
+    margin: 15px 0px 5px 10px;
+    color: lawngreen;
+  }
 
-    .section-bienvenida img{
-      width: 500px;
-      display: block;
-      position: relative;
-      left: 200px;
-    }
-    .section-bienvenida h2{
-      margin: 300px 0px 10px -100px;
-    }
-    .section-bienvenida p{
-      width: 510px;
-      margin: 0px 20px 10px -220px;
-    }
+  .form-header select{
+    width: 262px;
+    height: 23px;
+    margin: 20px 40px 15px 10px;
+  }
 
+  .section-bienvenida img{
+    width: 500px;
+    display: block;
+    position: relative;
+    left: 200px;
+  }
+  .section-bienvenida h2{
+    margin: 300px 0px 10px -100px;
+  }
+  .section-bienvenida p{
+    width: 510px;
+    margin: 0px 20px 10px -220px;
+  }
 
-    .section-hab{
-      height: 430px;
-    }
-    .section-hab img{
-      width: auto;
-      display: inline-block;
-      position: relative;
-      left: 80px;
-    }
-    .section-hab p{
-      display: none;
-    }
-    .btn-terminos{
-      padding:4px 0px;
-    }
-    .section-hab h3{
-      margin: 100px 0px 0px -50px;
-    }
-    .estrellas{  
-      margin: 0px 0px 5px -50px;  
-    }
-    .section-hab img.iconos{
-      display: inline-block;
-      position: relative;
-      margin: 0px 5px 5px -65px;  
-    }
-    .btn-section-hab{     
-      margin: 0px 15px 0px -40px;
-    }
-    .btn-terminos{
-      margin-top: 30px;
-    }
-
-    .section-promo article h3{
-      margin: 20px 0px 10px;
-    }
-    .box{
-      height: 105px;
-    }    
-    .texto-promo{
-      display: none;
-    }
-    .text-overlay{
-      font-size: 13px;
-    }
-    .section-comentarios{
-      height: 650px;
-    }
-    .caja-comentarios img{
-      margin: 0px 0px 0px -65px;        
-    } 
-    .section-serv{
-      height: 600px;
-    }
-    .section-serv h5{
-      width: 100%;
-      font-size: 13px;
-      display: block;
-      text-align: center;
-    }
-    .section-serv img{
-      margin-left: 55px;
-    }
-    .iconos{
-      width: 100%;
-      margin-top: 75px;
-    }
-
-    .section-restaurante{
-      height: 450px;
-    }
-      .caja-restaurante{
-        height: 340px;
-      }
-    .section-piscina{
-      height: 450px;
-    }
-      .caja-piscina{
-        height: 340px;
-      }
-      .footer{
-        height: 700px;
-      }
-
-      .mapa{
-        width: 515px;
-        height: 150px;
-
-      }
-      .contacto{
-      
-        width: 530px;
-        margin: 180px 0px 0px -190px;
-      }
-      .contacto img{
-        display: none;
-      }
-      .contacto-border{       
-        border: none;       
-      }
-      .form{
-        width: 530px;
-        margin: 280px 0px 0px -340px;
-
-      }
-      .subfooter{ 
-        width: 100%; 
-        margin-top: 0px;
-      }
-
-      
-    
-
-    
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-    
-  
-   
-
-
+  .section-hab{
+    height: 420px;
+  }
+  .section-hab img{
+    width: auto;
+    display: inline-block;
+    position: relative;
+    left: 80px;
+  }
+  .section-hab p{
+    display: none;
+  }
  
+  .section-hab h3{
+    margin: 100px 0px 0px -50px;
+  }
+  .estrellas{  
+    margin: 0px 0px 5px -50px;  
+  }
+  .section-hab img.iconos{
+    display: inline-block;
+    position: relative;
+    margin: 0px 5px 5px -65px;  
+  }
+  .btn-section-hab{     
+    margin: 0px 15px 0px -45px;
+  }
+ 
+  .btn-terminos{ 
+    margin-left: 230px; 
+    margin-top: 40px;   
+  } 
 
+  .box{
+    height: 101px;
+  } 
 
+  .section-promo article h3{
+    margin: 0px 0px 5px 0px;
+  }
+    
+  .texto-promo{
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .text-overlay{
+    font-size: 13px;
+  }
+  .btn-section-promo{
+    display: inline-block;
+    padding: 3px 10px;
+    margin-top: 1px;
+  }
 
+  .section-comentarios{
+    height: 610px;
+  }
+  .caja-comentarios img{
+    margin: 40px 0px 0px -80px ;       
+  } 
+
+  .iconos{
+    width: 100%; 
+    margin: 45px 0px;
+  }
+ 
+  .section-serv{
+    height: 500px;
+  }
+
+  .section-serv img{
+    margin-left: 55px;
+    margin-top: 15px;
+  }
+
+  .section-serv h5{
+    width: 100%;
+    margin-top: -10px;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+  }
+
+  .section-restaurante{
+    height: 450px;
+  }
+    .caja-restaurante{
+      height: 340px;
+    }
+  .section-piscina{
+    height: 450px;
+  }
+    .caja-piscina{
+      height: 340px;
+    }
+
+    .footer{
+      height: 700px;
+    }
+
+    .mapa{
+      width: 515px;
+      height: 150px;
+    }
+    .contacto{    
+      width: 530px;
+      margin: 180px 0px 0px -190px;
+    }
+    .contacto img{
+      display: none;
+    }
+
+    .contacto-border{       
+      border: none;       
+    }
+    .form{
+      width: 530px;
+      margin: 280px 0px 0px -340px;
+    }
+
+    .subfooter{ 
+      width: 100%; 
+      margin-top: 0px;
+    }
+ 
 }
+
+
+
+
